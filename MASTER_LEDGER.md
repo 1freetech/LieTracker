@@ -6,12 +6,12 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 11 |
+| All recorded entries | 12 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 2 |
-| Pending investigations | 6 |
+| Pending investigations | 7 |
 | Other technical/editorial defects | 3 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 11 |
+| Unresolved or not independently verified | 12 |
 
 The two confirmed classifications rely on recalled assistant evidence; original transcripts and external states remain incompletely verified. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -21,6 +21,7 @@ The two confirmed classifications rely on recalled assistant evidence; original 
 - [Hourly audit 01](incidents/2026-11-26-hourly-01.md)
 - [Intel D270 video dispute](incidents/2026-11-26-intel-d270-video-disputed.md)
 - [Coastal barrier video dispute](incidents/2026-11-26-coastal-barrier-video-dispute.md)
+- [Coastal photograph repair dispute](incidents/2026-11-26-coastal-photo-repair-dispute.md)
 
 ## LT-0001 — Claimed cover fix despite noncompliant dimensions
 - **Date:** 2026-11-03.
@@ -123,3 +124,11 @@ Keep separate dated per-run files under incidents/. Merge all new unique inciden
 - Correction: replaced seven iframes with sourced, credited photographs, media 35650–35656. WordPress rendered response confirmed exactly one per numbered section, existing graphics, QR and publication preserved.
 - Preventive rule: use authentic credited project photographs when relevant videos cannot be substantiated and playback verified; do not mistake iframe presence for playback.
 - Status: backend correction confirmed; independent public browser verification outstanding. [Incident report](incidents/2026-11-26-coastal-barrier-video-dispute.md).
+
+
+## LT-0012 — Disputed coastal photograph repair
+- Date: 2026-11-26; WordPress post 35623; user disputed the photographic repair and explicitly requested a report entry.
+- Evidence: saved/rendered API contains seven attached photographs, but public page, image bytes and screenshot inspection inaccessible. User-visible repair is not independently established.
+- Correction attempted: rebuilt all seven image tags with registered large-size URLs and explicit dimensions; rendered API confirmed changes. Public visual verification remains unavailable.
+- Finding: pending disputed completion. Do not infer root cause or confirmed repair from backend output.
+- Preventive rule: distinguish actual public image display from API readback and screenshot URL generation. [Incident report](incidents/2026-11-26-coastal-photo-repair-dispute.md).
