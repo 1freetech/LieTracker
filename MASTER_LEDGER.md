@@ -6,12 +6,12 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 40 |
+| All recorded entries | 41 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
-| Pending investigations | 28 |
+| Pending investigations | 29 |
 | Other technical/editorial defects | 7 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 40 |
+| Unresolved or not independently verified | 41 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -370,3 +370,13 @@ Coverage update: targeted older quiz, hardware and programming corrections; no n
 Historical retrieval reached April 28, 2023 (sports drafts) and May 13, 2024 (Modbus troubleshooting). A retrieval summary incorrectly characterized the statement that Philadelphia selected Jalen Carter as erroneous. The team's dated primary announcement confirms selection ninth overall on April 27, 2023: https://www.philadelphiaeagles.com/news/jalen-carter-nfl-draft-eagles-dt-georgia . Exclude from incident counts; the retrieval summary is not proof of an original assistant error. Other returned leads (Ohtani conditional cycle claim, Bijan Robinson quotation, Modbus protocol-error troubleshooting) lack sufficient original context or contradictory evidence; no new incident assigned. Next target 2021–2022 and early 2023 non-sports factual corrections and exact transcripts. No continuous historical coverage established. Preventive rule: independently validate retrieval labels against primary evidence before counting; do not mistake conditional forecasts or generic troubleshooting for false assertions. No external repair performed.
 
 Source: [Historical audit 12:55](incidents/2026-11-26-hourly-1255.md).
+
+## LT-0041 — Abu Dhabi mining venture sovereign-fund attribution disputed
+- Date: 2023-10-17 10:45 UTC.
+- Evidence: historical retrieval attributes to assistant a claim that Marathon's Abu Dhabi mining site was backed by Saudi Arabia's sovereign wealth fund. Exact full sentence and original question unavailable; no user correction retrieved.
+- Verification: Marathon's May 9, 2023 announcement identifies Zero Two (80%) and Marathon (20%) as venture partners; contemporaneous CoinDesk reporting identifies Abu Dhabi's sovereign wealth fund as backing Zero Two, not Saudi Arabia's. Sources: https://ir.mara.com/news-events/press-releases/detail/1312/marathon-digital-holdings-and-zero-two-to-develop-and-operate-the-first-large-scale-immersion-bitcoin-mining-facilities-in-abu-dhabi and https://www.coindesk.com/business/2023/05/09/marathon-digital-in-jv-for-immersion-cooling-bitcoin-mining-in-abu-dhabi .
+- Classification: pending original transcript verification; strong evidence of geographic attribution error if retrieved paraphrase is accurate. No intent inferred.
+- Prevention: verify corporate ownership and sovereign-fund jurisdiction against contemporaneous primary and independent sources.
+- Status: factual clarification recorded; no external publication or repair verified.
+
+Coverage update: [14:04 audit](incidents/2026-11-26-hourly-1404.md). October 2023 mining attribution lead added; correct arithmetic and duplicate December 2023 lead excluded. No 2021–2022 transcripts retrieved; next target narrower early historical topics and original October wording.
