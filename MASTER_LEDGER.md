@@ -364,3 +364,9 @@ Coverage update: 2021–2023 search returned only existing December 2023 lead; N
 Source: [Historical audit 12:02](incidents/2026-11-26-hourly-1202.md).
 
 Coverage update: targeted older quiz, hardware and programming corrections; no new 2021–2023 countable incident. See audit for exclusions and next targets.
+
+## Coverage and exclusion update — 12:55 Pacific
+
+Historical retrieval reached April 28, 2023 (sports drafts) and May 13, 2024 (Modbus troubleshooting). A retrieval summary incorrectly characterized the statement that Philadelphia selected Jalen Carter as erroneous. The team's dated primary announcement confirms selection ninth overall on April 27, 2023: https://www.philadelphiaeagles.com/news/jalen-carter-nfl-draft-eagles-dt-georgia . Exclude from incident counts; the retrieval summary is not proof of an original assistant error. Other returned leads (Ohtani conditional cycle claim, Bijan Robinson quotation, Modbus protocol-error troubleshooting) lack sufficient original context or contradictory evidence; no new incident assigned. Next target 2021–2022 and early 2023 non-sports factual corrections and exact transcripts. No continuous historical coverage established. Preventive rule: independently validate retrieval labels against primary evidence before counting; do not mistake conditional forecasts or generic troubleshooting for false assertions. No external repair performed.
+
+Source: [Historical audit 12:55](incidents/2026-11-26-hourly-1255.md).
