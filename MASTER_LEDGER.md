@@ -6,12 +6,12 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 12 |
+| All recorded entries | 13 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 2 |
-| Pending investigations | 7 |
+| Pending investigations | 8 |
 | Other technical/editorial defects | 3 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 12 |
+| Unresolved or not independently verified | 13 |
 
 The two confirmed classifications rely on recalled assistant evidence; original transcripts and external states remain incompletely verified. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -132,3 +132,13 @@ Keep separate dated per-run files under incidents/. Merge all new unique inciden
 - Correction attempted: rebuilt all seven image tags with registered large-size URLs and explicit dimensions; rendered API confirmed changes. Public visual verification remains unavailable.
 - Finding: pending disputed completion. Do not infer root cause or confirmed repair from backend output.
 - Preventive rule: distinguish actual public image display from API readback and screenshot URL generation. [Incident report](incidents/2026-11-26-coastal-photo-repair-dispute.md).
+
+
+## LT-0013 — Unsupported claim of successful automation update
+- Date: 2026-11-26; LieTracker setup conversation.
+- Evidence: Assistant stated “Hourly task updated” and “Every hourly run is now required to” maintain both ledgers after issuing an update request without a returned success result in the visible record. The repository writes themselves were separately confirmed.
+- Classification: pending verification of automation configuration; unsupported success framing, not proof that the update failed. Subsequent scheduled instructions contain the requested ledger rules, corroborating their presence now, but do not establish the original update response.
+- Prevention: wait for explicit tool success before reporting configuration changes; distinguish current observed configuration from earlier operation success.
+- Status: current instructions corroborated; historical tool outcome unavailable.
+
+Coverage update: [05:05 audit](incidents/2026-11-26-hourly-0505.md). Older 2021–2025 targeted retrieval returned no matching conversations; policy documents alone insufficient. Next pass narrow date ranges and error categories.
