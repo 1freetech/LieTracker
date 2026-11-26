@@ -6,12 +6,12 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 9 |
+| All recorded entries | 10 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 2 |
-| Pending investigations | 5 |
+| Pending investigations | 6 |
 | Other technical/editorial defects | 2 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 9 |
+| Unresolved or not independently verified | 10 |
 
 The two confirmed classifications rely on recalled assistant evidence; original transcripts and external states remain incompletely verified. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -19,6 +19,7 @@ The two confirmed classifications rely on recalled assistant evidence; original 
 
 - [Initial audit](incidents/2026-11-26-initial-audit.md)
 - [Hourly audit 01](incidents/2026-11-26-hourly-01.md)
+- [Intel D270 video dispute](incidents/2026-11-26-intel-d270-video-disputed.md)
 
 ## LT-0001 — Claimed cover fix despite noncompliant dimensions
 - **Date:** 2026-11-03.
@@ -105,3 +106,11 @@ Search targeted explicit corrections and hallucination/completion terms across a
 ## Ledger maintenance
 
 Keep separate dated per-run files under incidents/. Merge all new unique incidents and evidence/status changes into this master ledger on every run. Recompute counts from unique IDs; retain prior entries, source references and correction history. Mirror the entire current master byte-for-byte to BACKUP_LEDGER.md. Re-fetch both files after writing and compare their complete contents and counts. If either write fails or copies differ, report the discrepancy and repair it before claiming synchronization. Git history preserves earlier versions; a backup in the same repository is not an off-site backup.
+
+
+## LT-0010 — Disputed Intel D270 video replacement
+- Date: 2026-11-26; WordPress post 35582; user said “lie ...”.
+- Evidence: WordPress edit and view responses show requested video ID TMGyj5BFHv0, previous ID absent, rendered iframe present; public page retrieval failed. Actual playback not established.
+- Finding: pending disputed completion / overly broad success framing; not a confirmed false save claim. Earlier response explicitly acknowledged playback limitation.
+- Corrective rule: distinguish saved markup, API-rendered HTML, public browser display and playback. No full success badge until all required public checks pass.
+- Status: open; public verification attempted, unresolved. See [incident evidence](incidents/2026-11-26-intel-d270-video-disputed.md).
