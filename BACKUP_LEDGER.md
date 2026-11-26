@@ -6,12 +6,12 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 28 |
+| All recorded entries | 29 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 3 |
-| Pending investigations | 19 |
+| Pending investigations | 20 |
 | Other technical/editorial defects | 6 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 28 |
+| Unresolved or not independently verified | 29 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -259,3 +259,16 @@ Coverage update: [06:59 historical audit](incidents/2026-11-26-hourly-0659.md). 
 - Status: replacement assignment, old attachment deletion and public social metadata independently read back; visual repair not independently verified.
 
 Source: [Beyond Softwar cover audit](incidents/2026-11-26-beyond-softwar-cover-display.md).
+
+## LT-0029 — PEI social embed reported not displaying
+- Date: 2026-11-26.
+- Project: BitcoinVersus.Tech post 35759, Beyond Softwar.
+- Prior claim: “Added your original @VersusInstitute post” and “WordPress returned the correct post content and X widget script. Interactive media playback remains unverified.”
+- User response: “U lied. Again. Search library here post them to the story”.
+- Evidence: WordPress view response contained the correct tweet blockquote, status ID 2119245948673237215, and widget script. Prior PEI price-points post 2097310322126467084 also had correct blockquote. User reports failure. Prior answer explicitly qualified interactive playback, so an actual false playback claim is not established; reader-visible delivery remains disputed.
+- Likely failure mechanism: third-party embed loading, browser restrictions, cache or widget behavior; precise cause unknown. Server-rendered HTML is insufficient to prove client rendering.
+- Corrective action: searched WordPress media and ChatGPT file libraries; replaced the two X embed blocks with direct WordPress image blocks for original archived PEI master diagram (18121), terminology graphic (18125), and worked 1.789x PEI example (35081), retaining both source links. Confirmed all three actual img elements with attachment IDs, src and srcset in a fresh published-post view response, along with original four charts and cover 35765. The exact media attached to the November 8 tweet was not matched; the worked example is a related archive image, not claimed to be the tweet's original attachment.
+- Prevention: inspect actual reader-facing display before claiming an embed works; use direct library images with source links when widget rendering cannot be verified. Distinguish exact source media from related archival illustrations.
+- Classification: pending investigation of reported display failure; no independently observed browser rendering. Correction verified at saved/rendered HTML level only.
+
+Source: [PEI social embed display audit](incidents/2026-11-26-pei-social-embed-display.md).
