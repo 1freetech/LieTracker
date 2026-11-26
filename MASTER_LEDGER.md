@@ -272,3 +272,5 @@ Source: [Beyond Softwar cover audit](incidents/2026-11-26-beyond-softwar-cover-d
 - Classification: pending investigation of reported display failure; no independently observed browser rendering. Correction verified at saved/rendered HTML level only.
 
 Source: [PEI social embed display audit](incidents/2026-11-26-pei-social-embed-display.md).
+
+Follow-up: the user supplied the exact Power Efficiency Index — Key Definitions graphic. Uploaded that JPEG unchanged as WordPress media 35778 (1226×1283), replaced the earlier terminology image 18125 in post 35759, and verified the published rendered HTML contains its attachment ID, src and responsive srcset alongside 18121 and 35081. The previous terminology image was removed from the article to prevent duplication. Browser visual appearance remains unverified; no additional incident counted.
