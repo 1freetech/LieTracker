@@ -6,12 +6,12 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 37 |
+| All recorded entries | 40 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
-| Pending investigations | 25 |
+| Pending investigations | 28 |
 | Other technical/editorial defects | 7 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 37 |
+| Unresolved or not independently verified | 40 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -339,3 +339,28 @@ Coverage update: December 2023, June 2024 and March 2025 retrieved summaries rev
 Source: [Historical audit 10:56](incidents/2026-11-26-hourly-1056.md).
 
 Coverage update: 2021–2023 search returned only existing December 2023 lead; November 2024 and May 2025 mining summaries reviewed. Next target narrower older topic searches. No continuous coverage established.
+
+## LT-0038 — ASIC chip identification disputed
+- Date: 2025-04-15 01:19 UTC.
+- Retrieved user excerpt: “its a 1366 chip”; historical summary reports assistant initially identified BM1397 and subsequently corrected to BM1366.
+- Classification: pending; original hardware model, exact assistant text and chip markings unavailable. Distinct from Bash syntax incident LT-0020.
+- Prevention: verify board revision and chip markings against documentation before recommending firmware or hardware support.
+- Status: open; no hardware change verified.
+
+## LT-0039 — Python interpreter diagnosis disputed
+- Date: 2025-07-10 22:55 UTC.
+- Retrieved user excerpt: “the wrong version being used” / “wrong interpreter” in a Pillow/VS Code troubleshooting conversation. Summary identifies Python 3.11.9 and distinction between version and executable path.
+- Classification: pending; original assistant diagnosis and environment output unavailable.
+- Prevention: verify selected executable, sys.executable and python -m pip show Pillow in the same environment before claiming package installation or repair.
+- Status: open.
+
+## LT-0040 — Chart dash styling correction
+- Date: 2025-07-27 02:34 UTC.
+- Retrieved user excerpt: “no wrong change back”; requested smaller dashes and consistent short fine vertical dashes.
+- Classification: pending instruction-following defect; distinct styling request from mathematical chart incidents LT-0023 and LT-0024. Original rendered chart unavailable.
+- Prevention: inspect rendered chart against requested dash pattern before claiming completion.
+- Status: open.
+
+Source: [Historical audit 12:02](incidents/2026-11-26-hourly-1202.md).
+
+Coverage update: targeted older quiz, hardware and programming corrections; no new 2021–2023 countable incident. See audit for exclusions and next targets.
