@@ -6,14 +6,14 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 14 |
-| Confirmed claim/completion mismatches (as classified in source audits) | 2 |
+| All recorded entries | 15 |
+| Confirmed claim/completion mismatches (as classified in source audits) | 3 |
 | Pending investigations | 8 |
 | Other technical/editorial defects | 4 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 14 |
+| Unresolved or not independently verified | 15 |
 
-The two confirmed classifications rely on recalled assistant evidence; original transcripts and external states remain incompletely verified. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
+Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
 ## Source audit files
 
@@ -150,3 +150,11 @@ Coverage update: [05:05 audit](incidents/2026-11-26-hourly-0505.md). Older 2021â
 - Finding: confirmed editorial/source-verification defect and disputed completion. Assistant presented relevance and actual game examples as established despite insufficient evidence; playback/mobile caveat was disclosed. No proof of intentional deception, invalid individual clips, or false save claim.
 - Prevention: independently verify every source's identity, availability, coverage correspondence and public playback; distinguish saved markup from verified film; report gaps by scheme and avoid overall success framing when checks are incomplete.
 - Status: open; article-level repair and public playback remain unverified. [Full incident](incidents/2026-11-26-football-coverage-embed-dispute.md).
+
+
+## LT-0015 â€” HFE heatmap preview-to-publication mismatch
+- Date: 2026-11-26; WordPress post #35717.
+- Evidence: user screenshots show polished conversation matrix versus published scatter approximation missing model and category labels. Confirmed misleading preview-to-publication mismatch; prior inspection caveat does not excuse release defect.
+- Corrective action: inspected exact replacement image bytes, uploaded media #35727, replaced old block #35710 and checked WordPress view readback.
+- Prevention: same inspected asset for chat and published post; do not present an independent mockup as the actual chart. Reject missing labels, clipping and incomplete matrices before publishing.
+- Status: API-confirmed replacement; public browser visual verification and fresh source PDF validation outstanding. [Full incident](incidents/2026-11-26-hfe-heatmap-preview-mismatch.md).
