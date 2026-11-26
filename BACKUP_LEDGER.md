@@ -6,12 +6,12 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 15 |
+| All recorded entries | 27 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 3 |
-| Pending investigations | 8 |
-| Other technical/editorial defects | 4 |
+| Pending investigations | 18 |
+| Other technical/editorial defects | 6 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 15 |
+| Unresolved or not independently verified | 27 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -158,3 +158,90 @@ Coverage update: [05:05 audit](incidents/2026-11-26-hourly-0505.md). Older 2021�
 - Corrective action: inspected exact replacement image bytes, uploaded media #35727, replaced old block #35710 and checked WordPress view readback.
 - Prevention: same inspected asset for chat and published post; do not present an independent mockup as the actual chart. Reject missing labels, clipping and incomplete matrices before publishing.
 - Status: API-confirmed replacement; public browser visual verification and fresh source PDF validation outstanding. [Full incident](incidents/2026-11-26-hfe-heatmap-preview-mismatch.md).
+
+
+## LT-0016 — Image-derived numerical figures disputed
+- Date: 2024-11-18.
+- Evidence: User called extracted dollar/numerical figures “totally wrong”; assistant acknowledged and revised figures. Original image and values unavailable.
+- Classification: Pending; retrieved historical summary, not complete transcript.
+- Prevention: Recheck each extracted figure against source image; disclose illegibility.
+- Status: open; no independent external repair verified.
+
+## LT-0017 — Exact growth-rate match disputed
+- Date: 2025-07-30.
+- Evidence: Assistant reportedly asserted exact model match for modern YoY 41.89%, CAGR 36.99%, historical YoY 155.18%, CAGR 92.58%; user said “wrong youre lying if you need more information just ask”. Underlying dataset unavailable.
+- Classification: Pending; retrieved historical summary, not complete transcript.
+- Prevention: Require source series and dates; calculate arithmetic YoY and CAGR separately.
+- Status: open; no independent external repair verified.
+
+## LT-0018 — Inconsistent modern growth-rate confirmation
+- Date: 2025-07-30.
+- Evidence: Retrieved summary reports assistant confirmed article rates 24.0%, 61.7%, 99.3%, 113.4% despite preceding modern mean calculation of 35%. Full mapping of rates to metrics unavailable; distinct later assertion from LT-0017.
+- Classification: Pending; retrieved historical summary, not complete transcript.
+- Prevention: Reconcile every published rate with formula, period and underlying values.
+- Status: open; no independent external repair verified.
+
+## LT-0019 — Membership count disputed
+- Date: 2025-03-14.
+- Evidence: User stated “there were only 20 some odd members ever enrolled ever” and demanded due diligence; assistant acknowledged confusion. Original count and primary records unavailable.
+- Classification: Pending; retrieved historical summary, not complete transcript.
+- Prevention: Verify population definition and source before reporting counts.
+- Status: open; no independent external repair verified.
+
+## LT-0020 — Bash dash syntax error
+- Date: 2025-04-15.
+- Evidence: User corrected Bash syntax; assistant acknowledged en dash versus hyphen. Recalled acknowledgment supports an ordinary syntax defect, not deliberate deception.
+- Classification: Other defect; retrieved historical summary, not complete transcript.
+- Prevention: Use ASCII option hyphens and test shell commands.
+- Status: open; no independent external repair verified.
+
+## LT-0021 — Image text spelling disputed
+- Date: 2025-03-03.
+- Evidence: User said “youre spelling it wrong its supposed to be https”; assistant replied image featured lowercase https. Image unavailable.
+- Classification: Pending; retrieved historical summary, not complete transcript.
+- Prevention: Inspect exact generated text before claiming spelling fixed.
+- Status: open; no independent external repair verified.
+
+## LT-0022 — Python calculator indentation defect
+- Date: 2024-07-24.
+- Evidence: Retrieved summary describes unindented print statements under if/elif. Original complete code unavailable; reported technical defect, no false completion claim established.
+- Classification: Other defect; retrieved historical summary, not complete transcript.
+- Prevention: Compile and test example code before delivery.
+- Status: open; no independent external repair verified.
+
+## LT-0023 — Chart crossing logic disputed
+- Date: 2025-07-27.
+- Evidence: User said “thats wrong”; specified 1 J/TH crossing must determine each decay line year, not intersection with TH/s. Original chart unavailable.
+- Classification: Pending; retrieved historical summary, not complete transcript.
+- Prevention: Verify threshold crossing mathematically against requested axis and units.
+- Status: open; no independent external repair verified.
+
+## LT-0024 — Chart start benchmark disputed
+- Date: 2025-07-27.
+- Evidence: Separate later correction: user said “the chart is wrong” and specified 1.16 PH/s start; assistant acknowledged confusion and restated plan. Original chart unavailable.
+- Classification: Pending; retrieved historical summary, not complete transcript.
+- Prevention: Check plotted initial values and dates against requested benchmark.
+- Status: open; no independent external repair verified.
+
+## LT-0025 — Windows command environment mismatch
+- Date: 2025-01-22.
+- Evidence: User repeatedly requested Windows Command Prompt rather than Bash/Linux; assistant acknowledged cmd.exe only but supplied export.bat according to retrieved summary. Full command and context unavailable.
+- Classification: Pending; retrieved historical summary, not complete transcript.
+- Prevention: Confirm target shell and validate commands in that environment.
+- Status: open; no independent external repair verified.
+
+## LT-0026 — Incorrect graded answer reported
+- Date: 2025-07-23.
+- Evidence: User reported graded answer wrong; assistant changed answer from Safety data sheet to Health hazard evaluation. Question and grading evidence unavailable.
+- Classification: Pending; retrieved historical summary, not complete transcript.
+- Prevention: Retrieve full question and authoritative reference before correcting answer.
+- Status: open; no independent external repair verified.
+
+## LT-0027 — Historic arithmetic YoY versus CAGR confusion
+- Date: 2025-07-29.
+- Evidence: User disputed 113% historic mean YoY; assistant acknowledged arithmetic mean about 199.8% and described 113% as approximately CAGR. Original dataset unavailable; separate dated metric claim from LT-0017.
+- Classification: Pending; retrieved historical summary, not complete transcript.
+- Prevention: Show arithmetic mean of annual changes separately from endpoint CAGR.
+- Status: open; no independent external repair verified.
+
+Coverage update: [06:59 historical audit](incidents/2026-11-26-hourly-0659.md). Twelve older entries; no new confirmed false claim. See audit for exclusions and next search targets.
