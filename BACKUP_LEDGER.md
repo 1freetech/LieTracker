@@ -6,12 +6,12 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 29 |
-| Confirmed claim/completion mismatches (as classified in source audits) | 3 |
-| Pending investigations | 20 |
-| Other technical/editorial defects | 6 |
+| All recorded entries | 35 |
+| Confirmed claim/completion mismatches (as classified in source audits) | 4 |
+| Pending investigations | 24 |
+| Other technical/editorial defects | 7 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 29 |
+| Unresolved or not independently verified | 35 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -274,3 +274,50 @@ Source: [Beyond Softwar cover audit](incidents/2026-11-26-beyond-softwar-cover-d
 Source: [PEI social embed display audit](incidents/2026-11-26-pei-social-embed-display.md).
 
 Follow-up: the user supplied the exact Power Efficiency Index — Key Definitions graphic. Uploaded that JPEG unchanged as WordPress media 35778 (1226×1283), replaced the earlier terminology image 18125 in post 35759, and verified the published rendered HTML contains its attachment ID, src and responsive srcset alongside 18121 and 35081. The previous terminology image was removed from the article to prevent duplication. Browser visual appearance remains unverified; no additional incident counted.
+
+
+## LT-0030 — Sequence answer contradicts its own calculation
+- Date: 2025-03-10.
+- Retrieved assistant excerpt summary: computed 6897557986, then selected “Option A: 689754” and asserted it followed the pattern. User requested careful mathematical review.
+- Classification: confirmed internal numerical inconsistency in retrieved assistant record; original question unavailable, so correct option not established.
+- Prevention: compare computed result with selected option before answering; do not force an unmatched option.
+- Status: open; original question needed.
+
+## LT-0031 — Python conditional indentation defect
+- Date: 2024-06-03.
+- Retrieved assistant record summary describes an if example with print/else unindented. Original code not available verbatim.
+- Classification: technical defect as described in historical summary, not a proven false factual claim. Distinct date from LT-0022.
+- Prevention: validate indentation and parse complete examples before delivery. Python if suites require indentation; else aligns with if.
+- Status: original example not independently retrieved.
+
+## LT-0032 — Python missing-comma diagnosis disputed
+- Date: 2024-06-06.
+- Retrieved user correction says missing commas between lists would cause a syntax error rather than the assistant's claimed tuple/indexing behavior.
+- Classification: pending; original expression is unavailable and adjacent bracket expressions can sometimes parse as indexing, so neither diagnosis can be confirmed without exact code.
+- Prevention: reproduce exact expression and inspect exception before diagnosing.
+- Status: open.
+
+## LT-0033 — Answer evaluation reversed
+- Date: 2023-12-14.
+- Retrieved assistant record summary says answer 23 was marked correct, then assistant stated “first… more likely B”.
+- Classification: pending; question and options unavailable, reversal alone does not establish which evaluation was wrong.
+- Prevention: verify question and grading rationale before declaring correctness.
+- Status: open.
+
+## LT-0034 — Linux link-color explanation disputed
+- Date: 2025-03-15.
+- Retrieved user correction says both may be links and hard link may appear red; requested specificity beyond sudo.
+- Classification: pending; original command, LS_COLORS and output unavailable.
+- Prevention: inspect ls options, LS_COLORS, inode and link count; do not infer link type from color alone.
+- Status: open.
+
+## LT-0035 — Python modulo sign explanation potentially misleading
+- Date: 2024-06-03.
+- Retrieved assistant summary says modulo with negatives can be negative. This is true when the divisor is negative, but misleading if generalized to negative dividends. Exact wording and examples unavailable.
+- Classification: pending, not a confirmed false statement.
+- Corrective rule: Python integer remainder has divisor's sign (or zero); e.g. -7 % 3 = 2 and 7 % -3 = -2.
+- Status: open.
+
+Source: [Historical audit 09:59](incidents/2026-11-26-hourly-0959.md).
+
+Coverage update: December 2023, June 2024 and March 2025 retrieved summaries reviewed; no continuous coverage or full transcripts established. Next target 2021–2023 and exact original artifacts.
