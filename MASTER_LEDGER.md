@@ -6,12 +6,12 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 35 |
-| Confirmed claim/completion mismatches (as classified in source audits) | 4 |
-| Pending investigations | 24 |
+| All recorded entries | 37 |
+| Confirmed claim/completion mismatches (as classified in source audits) | 5 |
+| Pending investigations | 25 |
 | Other technical/editorial defects | 7 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 35 |
+| Unresolved or not independently verified | 37 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -321,3 +321,21 @@ Follow-up: the user supplied the exact Power Efficiency Index — Key Definition
 Source: [Historical audit 09:59](incidents/2026-11-26-hourly-0959.md).
 
 Coverage update: December 2023, June 2024 and March 2025 retrieved summaries reviewed; no continuous coverage or full transcripts established. Next target 2021–2023 and exact original artifacts.
+
+## LT-0036 — Mining power and efficiency ranges inconsistent
+- Date: 2024-11-08.
+- Retrieved assistant summary: Bitaxe Gamma 601 1.2 TH/s, 10–14.17 J/TH, 15–30 W; Bitaxe HEX 3 TH/s, 5–6.67 J/TH, 15–30 W.
+- Classification: confirmed internal numerical mismatch if ranges describe the stated fixed hashrates, as presented in the summary. At 1.2 TH/s, 15–30 W implies 12.5–25 J/TH; at 3 TH/s, 15–30 W implies 5–10 J/TH. Original operating-point and measurement-boundary context unavailable; actual device specifications not established.
+- Prevention: calculate watts divided by TH/s at each matched operating point; distinguish wall and chip power.
+- Status: arithmetic corrected here; original publication or hardware data not verified.
+
+## LT-0037 — One joule per terahash described as near thermodynamic limit
+- Date: 2025-05-21.
+- Retrieved assistant summary: forecast 1 J/TH by 2036 and described it as near the thermodynamic limit.
+- Classification: pending contextual verification; forecast is not a factual error by itself. At 300 K, Landauer energy per irreversible bit erasure is approximately 2.87e-21 J; 1 J/TH is 1e-12 J per hash, about 348 million times the single-bit erasure bound. A hash requires many operations, so that ratio alone is not a SHA-256-specific lower bound. Original rationale unavailable.
+- Prevention: distinguish per-bit physical bounds, algorithm-specific irreversible operations and practical engineering limits; quantify assumptions.
+- Status: conceptual clarification recorded; original claim context and any publication not verified.
+
+Source: [Historical audit 10:56](incidents/2026-11-26-hourly-1056.md).
+
+Coverage update: 2021–2023 search returned only existing December 2023 lead; November 2024 and May 2025 mining summaries reviewed. Next target narrower older topic searches. No continuous coverage established.
