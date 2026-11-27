@@ -1,0 +1,9 @@
+# Repository reconciliation — 2026-11-27 07:13 Pacific
+
+Verified README, both complete cumulative ledgers, recursive incident directory listing, 04:02 audit, and five recent commits. Baseline master and backup matched byte-for-byte at 55c9c5960539df530618af60581ecb05f73ce2a3; 54 unique sequential IDs. The 04:02 commits dc7e43384b74d475d06887be0a5d82aec4d9d20a, 41011c01d759df325202dcfdc2044bcf00c7bc1c and c647f81d955bba23fb8160593fcd2f5ba8ef6634 were located in history. The 04:02 individual audit and LT-0052–0054 were present. The three subsequent incomplete runs had no corresponding individual audit files and reported no new historical findings. Backfilled each separately:
+
+- [2026-11-27-hourly-untimed-catchup.md](2026-11-27-hourly-untimed-catchup.md) — commit 930d5994c50914c8f60d6509da914daf95c4011a
+- [2026-11-27-hourly-0601-catchup.md](2026-11-27-hourly-0601-catchup.md) — commit 5109d851239e01760735a57ab8ddc54bb98b1f6a
+- [2026-11-27-hourly-0700-catchup.md](2026-11-27-hourly-0700-catchup.md) — commit 96415689aacaff79deaf8083394b256523922f95
+
+Three distinct ordinary execution defects, LT-0055–0057, recorded from visible assistant reports. These are not confirmed false claims. New totals: 57 unique entries, 5 previously classified confirmed mismatches, 41 pending investigations, 11 other defects. No new external repairs independently verified. Retrospective repository repair does not establish full historical incident resolution. The 04:02 historical cursor is preserved; no new original historical conversation retrieval in this targeted write-repair pass. No verified 2021–2022 archive. Full archive reread not performed. Preventive rule: reserve write and verification calls, create a dated record even with zero findings, and never treat directory listing rejection as evidence that write permissions are unavailable.
