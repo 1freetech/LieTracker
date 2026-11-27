@@ -412,3 +412,7 @@ Source: [Individual incident audit](incidents/2026-11-26-bitmain-editorial-concl
 - Status: public-display discrepancy unresolved; no independent public-text verification or successful cache purge.
 
 Source: [Individual incident audit](incidents/2026-11-26-bitmain-public-display-dispute.md).
+
+## Ledger reconciliation — 2026-11-26
+
+Verified 43 unique sequential incident IDs and preserved the existing totals: 5 previously classified confirmed mismatches, 30 pending investigations and 8 other defects. LT-0042 and LT-0043 already had separate incident files and synchronized ledger commits; no duplicate records added. Both cumulative files matched before this update. No new external repair independently verified. Historical coverage remains non-contiguous; original 2021–2022 records are unavailable through prior reported searches, not audited. Full archive-file read was limited by the tool-call budget; the two newest incident files and 15:59 audit were individually checked. See [reconciliation audit](incidents/2026-11-26-ledger-reconciliation.md) for the explicit ID classification breakdown and limitations.
