@@ -6,12 +6,12 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 41 |
+| All recorded entries | 42 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
 | Pending investigations | 29 |
-| Other technical/editorial defects | 7 |
+| Other technical/editorial defects | 8 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 41 |
+| Unresolved or not independently verified | 42 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -386,3 +386,17 @@ Coverage update: [14:04 audit](incidents/2026-11-26-hourly-1404.md). October 202
 Historical search targeted 2021–2022, early 2023, December 18 2023 and March 11 2024; no matching conversations returned. Previous report's two leads remain unsubstantiated (legal interpretation and historical conflict classification); no exact assistant text, no new IDs. Coverage cursor remains non-contiguous; next target narrower date/topic searches and original excerpts. Existing 16 audit files retrieved; latest five commits inspected, including 044bddd0d38095200bba7203b07b7c6673540478. Baseline master and backup content and blob SHA matched; 41 distinct incident headings counted. Existing classifications retained (5 confirmed as previously classified, 29 pending, 7 other defects); no independent external repairs. Preventive rule: never convert a failed historical search or a prior report's unverified lead into a confirmed incident. No private details added.
 
 Source: [Individual audit](incidents/2026-11-26-hourly-1559.md).
+
+## LT-0042 — BITMAIN editorial conclusion remained procedural after claimed editorial revision
+- Date: 2026-11-26.
+- Project: BitcoinVersus.Tech, WordPress post #35896, https://bitcoinversus.tech/2026/11/26/your-favorite-bitcoin-miners-favorite-bitcoin-miner-bitmain-power-efficiency-theory/
+- Prior claim: “Updated and verified in WordPress” and “Improved section headings and paragraph transitions.”
+- User correction: identified the closing paragraph as needing revision and requested that the lie be marked.
+- Evidence: the first edit was saved and read back, but its revised closing still began “A more definitive assessment would require” and retained procedural next steps rather than a substantive editorial conclusion. The older wording quoted by the user was not present in the stored post at the second retrieval.
+- Classification: confirmed editorial acceptance/QA defect and user-reported lie; not a confirmed false save claim because the first edit was demonstrably saved. No intent inferred. Public display of the older version was not independently checked.
+- Remedy: replaced the closing with a substantive conclusion connecting ASIC performance, energy efficiency and the documented chronology, preserving the research link and distinguishing resemblance from proof of influence.
+- Verification: fresh WordPress retrieval confirms the new conclusion, both prior openings absent, published status and featured media #35900 unchanged. Public browser rendering/playback not tested.
+- Prevention: read the entire revised article, particularly its conclusion, against the actual editorial objective; distinguish stored-content verification from public display and editorial acceptance.
+- Status: corrected and verified in WordPress storage; public rendering not independently verified.
+
+Source: [Individual incident audit](incidents/2026-11-26-bitmain-editorial-conclusion.md).
