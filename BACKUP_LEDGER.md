@@ -6,12 +6,12 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 45 |
+| All recorded entries | 46 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
-| Pending investigations | 32 |
+| Pending investigations | 33 |
 | Other technical/editorial defects | 8 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 45 |
+| Unresolved or not independently verified | 46 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -442,3 +442,17 @@ Two pending leads from the preceding audit recorded as LT-0044 and LT-0045; LT-0
 ## Coverage update — 19:02 Pacific
 
 Targeted historical retrieval for December 2023 legal interpretation, March 2024 military history, June 2024 filesystem user-mode claim, November 2024 app ranking and older corrections returned no relevant original assistant responses. One unrelated user question excluded. No new IDs or reclassifications; 45 distinct entries (5 previously classified confirmed, 32 pending, 8 other), no independently verified external repairs. Historical coverage remains non-contiguous; next target narrower individual topics and older distinct corrections. See [hourly audit](incidents/2026-11-26-hourly-1902.md).
+
+## LT-0046 — MicroBT efficiency figure used as modeling baseline, later withdrawn
+- Date: 2025-12-13 (correction date; original chart date unavailable).
+- Retrieved assistant excerpt at 14:45:48 UTC: “An earlier chart used a reported 5.42 J per TH figure for a MicroBT machine… that number does not hold up on review.”
+- Retrieved earlier correction summary at 11:38:54 UTC: model treated M76 5.42 J/TH as real, implying 40–50% annual gains and approximately 2029 for 1 J/TH; revised baseline 9.5 J/TH and forecast 2033–2039. These are historical reported model inputs and forecasts, not independently verified hardware specifications.
+- Classification: pending original claim and manufacturer-source verification; explicit retrieved assistant withdrawal is strong evidence of a modeling defect, but original chart and underlying source unavailable. No intent inferred.
+- Prevention: distinguish measured commercial specifications from prototypes, rumors and forecasts; verify manufacturer source and date before using a value as a baseline; rerun dependent projections when a baseline is withdrawn.
+- Status: historical correction reported; no independent external repair verified.
+
+Source: [20:03 audit](incidents/2026-11-26-hourly-2003.md).
+
+## Coverage update — 20:03 Pacific
+
+December 2025 efficiency baseline withdrawal newly recorded as pending LT-0046. Shell syntax and ambiguous miner identification excluded; existing correction topics deduplicated. 46 distinct IDs, 5 previously classified confirmed, 33 pending, 8 other defects. No independent external repairs. No verified 2021–2022 archive or continuous coverage. Next target original chart/source and older distinct exchanges.
