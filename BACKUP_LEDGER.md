@@ -6,12 +6,12 @@ Last consolidated: 2026-11-27. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 51 |
+| All recorded entries | 54 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
-| Pending investigations | 38 |
+| Pending investigations | 41 |
 | Other technical/editorial defects | 8 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 51 |
+| Unresolved or not independently verified | 54 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -534,3 +534,30 @@ Historical retrieval returned seven dated references across 2024; one distinct p
 LT-0051 additional historical retrieval: the August 14, 2024 summary also reports a correct virtual-environment option (`python3 -m venv myenv`, `source myenv/bin/activate`, `pip install Flask`), alongside `pip install --user Flask`, ensurepip and Docker. Thus the potentially incorrect user-site workaround was one alternative, not the sole recommendation. Original full response and user follow-up remain unavailable; pending classification retained. July 15, 2024 Flask typo correction and October 24, 2024 physical-server API description did not establish additional assistant errors. No new IDs. Next seek distinct older technical corrections and original Flask environment context.
 
 Prior 02:02 readback completed; both ledgers matched. Counts unchanged: 51 distinct IDs, 5 previously confirmed, 38 pending, 8 other defects; no independently verified external repairs. Source: [02:58 audit](incidents/2026-11-27-hourly-0258.md).
+
+## LT-0052 — Directory diagnostic disputed
+- Date: 2025-04-26 19:09:15 UTC.
+- Evidence: historical retrieval quotes user correction “its not an error its just telling him that its a directory” and reports a revised assistant explanation of /var output. Original command, output and initial answer not available.
+- Classification: pending. A directory diagnostic can be informational or an actual command failure depending on context.
+- Prevention: inspect exact command, output and exit status before labeling a diagnostic.
+- Status: open; no external repair verified.
+
+## LT-0053 — Placeholder links in IBM–AMD article
+- Date: 2025-08-27 00:40:17 UTC.
+- Evidence: historical assistant-output summary reports placeholder links (“https://...”) despite a request for actual links, and a cover generation claim without an accompanying image in the retrieved material. Full original output and attachment history unavailable.
+- Classification: pending; both issues belong to the same reported deliverable, not independently confirmed false claims.
+- Prevention: validate real URLs and actual image delivery before claiming completion.
+- Status: open; no external repair verified.
+
+## LT-0054 — Malformed ECC article text
+- Date: 2025-02-20 23:53:48 UTC.
+- Evidence: historical assistant-output summary reports truncated words (“rror,” “CC,” “egistered”) in an ECC article. Full original artifact unavailable.
+- Classification: pending original output verification; possible editorial defect, not established false claim.
+- Prevention: proofread complete article and verify required deliverables before submission.
+- Status: open; no external repair verified.
+
+Source: [04:02 audit](incidents/2026-11-27-hourly-0402.md).
+
+## Coverage update — 2026-11-27 04:02 Pacific
+
+Three distinct pending leads from February, April and August 2025; other technical references screened without assigning unsupported errors. 54 distinct IDs, 5 previously classified confirmed, 41 pending, 8 other defects. No independent external repairs. Next seek original artifacts for LT-0052–0054 and older distinct corrections. No verified 2021–2022 archive. Source: [04:02 audit](incidents/2026-11-27-hourly-0402.md).
