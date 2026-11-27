@@ -6,12 +6,12 @@ Last consolidated: 2026-11-27. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 50 |
+| All recorded entries | 51 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
-| Pending investigations | 37 |
+| Pending investigations | 38 |
 | Other technical/editorial defects | 8 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 50 |
+| Unresolved or not independently verified | 51 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -514,3 +514,17 @@ Three historical summaries reviewed from June–September 2023; one distinct pen
 ## Coverage update — 2026-11-27 00:58 Pacific
 
 LT-0050: Additional retrieval on 2026-11-27 attributes the phrase “impressive 70% return in 2023” to the August 16, 2023 assistant article and names JPMorgan, Eaton Vance, PGIM, Lord Abbett, Neuberger Berman and UBS as alleged buyers since April 2023. Retrieval is a summary with quoted fragments, not a complete original transcript. Institutional purchase attribution remains unverified; no separate incident assigned. Existing pending classification retained. Search of older 2023 and 2021–2022 material returned no distinct historical conversation or complete transcript. 50 unique IDs, 5 previously classified confirmed, 37 pending, 8 other defects; no independently verified external repairs. Coverage remains non-contiguous. Source: [00:58 audit](incidents/2026-11-27-hourly-0058.md).
+
+## LT-0051 — User-site pip workaround for externally managed Python environment
+- Date: 2024-08-14 01:54:33 UTC.
+- Evidence: historical assistant-output summary reports recommending `pip install --user Flask` as a workaround for an externally managed Python environment. Full original response, pip version and environment unavailable; no user correction retrieved. Earlier 23:03 audit mentioned Flask but did not establish an error or assign an ID.
+- Technical clarification: PEP 668 explicitly covers user-site installations that can shadow distribution packages. In a marked externally managed interpreter, modern pip normally refuses even --user installs outside a virtual environment. Use a virtual environment (python3 -m venv .venv; .venv/bin/python -m pip install Flask) or distribution package where appropriate. Reference: https://peps.python.org/pep-0668/ (technical reference, not fetched in this run).
+- Classification: pending original transcript and environment verification; plausible technical error, not confirmed false claim.
+- Prevention: distinguish ordinary permissions errors from externally managed environment restrictions; prefer isolated virtual environments and verify the actual error before recommending commands.
+- Status: technical clarification recorded; no external repair verified.
+
+Source: [02:02 audit](incidents/2026-11-27-hourly-0202.md).
+
+## Coverage update — 2026-11-27 02:02 Pacific
+
+Historical retrieval returned seven dated references across 2024; one distinct pending Python environment workaround lead recorded as LT-0051. Prior corrections deduplicated; other ambiguous claims excluded. 51 distinct IDs, 5 previously classified confirmed, 38 pending, 8 other defects. No independently verified external repairs. No verified 2021–2022 archive or full original transcripts returned. Next target original Flask response and older distinct technical exchanges. Source: [02:02 audit](incidents/2026-11-27-hourly-0202.md).
