@@ -6,12 +6,12 @@ Last consolidated: 2026-11-27. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 54 |
+| All recorded entries | 57 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
 | Pending investigations | 41 |
-| Other technical/editorial defects | 8 |
+| Other technical/editorial defects | 11 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 54 |
+| Unresolved or not independently verified | 57 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -561,3 +561,44 @@ Source: [04:02 audit](incidents/2026-11-27-hourly-0402.md).
 ## Coverage update — 2026-11-27 04:02 Pacific
 
 Three distinct pending leads from February, April and August 2025; other technical references screened without assigning unsupported errors. 54 distinct IDs, 5 previously classified confirmed, 41 pending, 8 other defects. No independent external repairs. Next seek original artifacts for LT-0052–0054 and older distinct corrections. No verified 2021–2022 archive. Source: [04:02 audit](incidents/2026-11-27-hourly-0402.md).
+
+
+## LT-0055 — Mandatory audit repository write omitted — untimed run after 04:02
+- Date: 2026-11-27.
+- Evidence: The audit report after the 04:02 run stated: “New verified commits: None.” It explicitly reported that ledger retrieval, investigation, writes and readback were not completed. The exact run time was not given.
+- Classification: other operational defect; mandatory repository persistence was omitted, with failure candidly disclosed. Not a confirmed false factual or completion claim.
+- Assessment: No historical findings were claimed. This is an ordinary execution failure, not a false success claim.
+- Observable cause: required write/readback steps were not executed; underlying reason not established. Do not infer unavailable permissions without a failed write attempt.
+- Prevention: reserve tool calls for audit creation, master update, backup update and readback; save zero-finding runs and report actual write errors.
+- Remedy: retrospective audit record created during 07:13 reconciliation; original missed execution cannot be made timely retroactively.
+- Status: catch-up record prepared; final repository verification is tracked in the reconciliation and current report.
+
+Source: [Retrospective audit](incidents/2026-11-27-hourly-untimed-catchup.md).
+
+## LT-0056 — Mandatory audit repository write omitted — 06:01 run
+- Date: 2026-11-27.
+- Evidence: The 06:01 report stated: “The mandatory individual audit file for this run was not committed.” It reported retrieval of both ledger blob SHAs but no new commits or coverage progress.
+- Classification: other operational defect; mandatory repository persistence was omitted, with failure candidly disclosed. Not a confirmed false factual or completion claim.
+- Assessment: Directory retrieval was reportedly rejected, but the report did not establish that file creation or ledger updates were blocked. No historical findings were claimed.
+- Observable cause: required write/readback steps were not executed; underlying reason not established. Do not infer unavailable permissions without a failed write attempt.
+- Prevention: reserve tool calls for audit creation, master update, backup update and readback; save zero-finding runs and report actual write errors.
+- Remedy: retrospective audit record created during 07:13 reconciliation; original missed execution cannot be made timely retroactively.
+- Status: catch-up record prepared; final repository verification is tracked in the reconciliation and current report.
+
+Source: [Retrospective audit](incidents/2026-11-27-hourly-0601-catchup.md).
+
+## LT-0057 — Mandatory audit repository write omitted — 07:00 run
+- Date: 2026-11-27.
+- Evidence: The 07:00 report stated: “The write operations were identified but not executed.” It reported zero new commits and no coverage progress.
+- Classification: other operational defect; mandatory repository persistence was omitted, with failure candidly disclosed. Not a confirmed false factual or completion claim.
+- Assessment: The report itself distinguishes a directory retrieval error from an actual write failure. No historical findings were claimed.
+- Observable cause: required write/readback steps were not executed; underlying reason not established. Do not infer unavailable permissions without a failed write attempt.
+- Prevention: reserve tool calls for audit creation, master update, backup update and readback; save zero-finding runs and report actual write errors.
+- Remedy: retrospective audit record created during 07:13 reconciliation; original missed execution cannot be made timely retroactively.
+- Status: catch-up record prepared; final repository verification is tracked in the reconciliation and current report.
+
+Source: [Retrospective audit](incidents/2026-11-27-hourly-0700-catchup.md).
+
+## Repository reconciliation — 2026-11-27 07:13 Pacific
+
+04:02 audit and both ledgers retrieved; previous commits located. Three subsequent missed audit files backfilled separately, with LT-0055–0057 classified as ordinary operational defects. 57 unique entries, 5 previously classified confirmed mismatches, 41 pending investigations, 11 other defects. No new external repairs independently verified. No new original historical retrieval in this targeted reconciliation; preserve 04:02 historical search cursor and resume original-artifact investigation for LT-0052–0054. No verified 2021–2022 archive. See [07:13 reconciliation](incidents/2026-11-27-hourly-0713-reconciliation.md).
