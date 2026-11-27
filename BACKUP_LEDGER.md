@@ -6,12 +6,12 @@ Last consolidated: 2026-11-27. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 59 |
+| All recorded entries | 61 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
-| Pending investigations | 41 |
-| Other technical/editorial defects | 13 |
+| Pending investigations | 42 |
+| Other technical/editorial defects | 14 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 59 |
+| Unresolved or not independently verified | 61 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -626,3 +626,24 @@ Source: [Retrospective audit](incidents/2026-11-27-hourly-0700-catchup.md).
 April 26 2025 user correction for LT-0052 repeated verbatim: “its not an error its just telling him that its a directory”. Retrieved assistant summary reports acknowledgment and description of /var as a directory, “not an error message.” Original command and complete response unavailable; pending classification retained. LT-0053 and LT-0054 original artifacts not recovered. Distinct April 26 2025 draft correction “He hasn’t been selected in 1st 3 rounds” and instructions to verify links were retrieved, but original assistant claims and subject context insufficient to assign new incidents. No verified 2021–2022 archive. Next seek original command and article artifacts and original draft claim. No independently verified external repairs.
 
 Two missed runs backfilled as LT-0058–0059. 59 unique records; 5 previously classified confirmed, 41 pending, 13 other defects. See [10:00 audit](incidents/2026-11-27-hourly-1000.md).
+
+## LT-0060 — Missed mandatory repository write (10:55 Pacific)
+- Date: 2026-11-27.
+- Evidence: visible prior report states “No repository writes or independent readback were completed during the current run.”
+- Classification: other operational defect, not a false success claim.
+- Observable cause: required operations omitted; underlying reason unknown; no permission failure established.
+- Remedy: retrospective audit record; original timing failure remains.
+- Prevention: prioritize actual writes and readback.
+- Source: [Catch-up audit](incidents/2026-11-27-hourly-1055-catchup.md).
+
+## LT-0061 — NFL draft reporting and placeholder links
+- Date: 2025-04-26.
+- Evidence: historical retrieval quotes user corrections “mention he wasn’t drafted in first round” and “He hasn’t been selected in 1st 3 rounds look up and search internet.” Retrieved assistant summaries report an initial claim of a 2024 undrafted/2025 return, subsequent draft updates, and placeholder AP/NY Post links. The user later supplied the NFL announcement of Shedeur Sanders's Browns selection.
+- Classification: pending original response and link verification; do not treat later selection as contradicting earlier nonselection at a different time. One deliverable cluster, not multiple confirmed lies.
+- Prevention: verify draft year, contemporaneous selection status and actual source URLs before publication.
+- Status: open; no independently verified external repair.
+- Source: [12:03 audit](incidents/2026-11-27-hourly-1203.md).
+
+## Coverage update — 2026-11-27 12:03 Pacific
+
+10:55 missed audit backfilled. April–May 2023 draft summaries screened; April 26 2025 draft lead expanded into LT-0061. Original artifacts unavailable. 61 unique entries, 5 previously classified confirmed, 42 pending, 14 other defects. Next seek original draft article and links, ECC and IBM–AMD artifacts and distinct older corrections. No verified 2021–2022 archive. See [12:03 audit](incidents/2026-11-27-hourly-1203.md).
