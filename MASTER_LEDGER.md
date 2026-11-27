@@ -1,6 +1,6 @@
 # LieTracker — Master Ledger
 
-Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve every stable incident ID and supporting evidence. Historical summaries are not full transcripts; no intent to deceive is inferred. Counts describe recorded entries only, not all conversations.
+Last consolidated: 2026-11-27. Canonical cumulative incident record; preserve every stable incident ID and supporting evidence. Historical summaries are not full transcripts; no intent to deceive is inferred. Counts describe recorded entries only, not all conversations.
 
 ## Cumulative totals
 
@@ -510,3 +510,7 @@ Source: [23:59 audit](incidents/2026-11-26-hourly-2359.md).
 ## Coverage update — 23:59 Pacific
 
 Three historical summaries reviewed from June–September 2023; one distinct pending bond attribution lead. Original transcripts unavailable. 50 unique IDs, 5 previously classified confirmed, 37 pending, 8 other defects. No independently verified external repairs. Next target original August 2023 wording and older distinct exchanges. No verified 2021–2022 archive.
+
+## Coverage update — 2026-11-27 00:58 Pacific
+
+LT-0050: Additional retrieval on 2026-11-27 attributes the phrase “impressive 70% return in 2023” to the August 16, 2023 assistant article and names JPMorgan, Eaton Vance, PGIM, Lord Abbett, Neuberger Berman and UBS as alleged buyers since April 2023. Retrieval is a summary with quoted fragments, not a complete original transcript. Institutional purchase attribution remains unverified; no separate incident assigned. Existing pending classification retained. Search of older 2023 and 2021–2022 material returned no distinct historical conversation or complete transcript. 50 unique IDs, 5 previously classified confirmed, 37 pending, 8 other defects; no independently verified external repairs. Coverage remains non-contiguous. Source: [00:58 audit](incidents/2026-11-27-hourly-0058.md).
