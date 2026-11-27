@@ -6,12 +6,12 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 49 |
+| All recorded entries | 50 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
-| Pending investigations | 36 |
+| Pending investigations | 37 |
 | Other technical/editorial defects | 8 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 49 |
+| Unresolved or not independently verified | 50 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -496,3 +496,17 @@ One pending distinct network attribution lead from November 2024; LT-0016 revise
 ## Coverage update — 23:03 Pacific
 
 LT-0045: Evidence supplement (2026-11-26 23:03 Pacific): historical retrieval returned a summary of the assistant response dated 2024-06-24 00:46:51 UTC containing the wording “The file system operates in user mode.” This is summary-level evidence, not an independently retrieved full transcript. No corresponding user correction was returned. The statement is overbroad for conventional kernel-resident filesystems; applications invoke filesystem services from user mode, and user-space filesystem implementations also exist. Original question and qualifications remain unavailable; classification stays pending. No new IDs; repeated LT-0016, LT-0044 and LT-0032 excluded. Flask and domain-controller summaries did not establish errors. Recounted 49 distinct IDs: 5 previously classified confirmed, 36 pending, 8 other defects. No independent external repairs. Next target older 2023 distinct topics and original filesystem context. No verified 2021–2022 archive. Source: [23:03 audit](incidents/2026-11-26-hourly-2303.md).
+
+## LT-0050 — El Salvador sovereign bond returns potentially misattributed to Bitcoin bond
+- Date: 2023-08-16 11:15:57 UTC.
+- Evidence: historical retrieval summary attributes to assistant a claim that El Salvador Bitcoin Bond returned 70% in 2023 and mentions institutional purchases. Exact original wording and user question unavailable. No user correction retrieved.
+- External verification: contemporaneous reporting identifies the 70% return as belonging to conventional dollar sovereign debt, not the proposed Bitcoin-backed Volcano Bond. December 2023 reporting identifies regulatory approval and prospective issuance in 2024. Sources: https://www.benzinga.com/markets/cryptocurrency/23/08/33876473/el-salvadors-bitcoin-bet-pays-off-as-bonds-skyrocket-with-70-returns and https://fortune.com/crypto/2023/12/12/el-salvadors-bitcoin-volcano-bond-approved/ .
+- Classification: pending original transcript; strong evidence of instrument conflation if summary accurately reflects the answer. Separate purchase amount in summary not verified or counted separately.
+- Prevention: verify instrument identity, issuance status, return period and distinction between recommendations and purchases before reporting bond performance.
+- Status: factual clarification recorded; no external repair verified.
+
+Source: [23:59 audit](incidents/2026-11-26-hourly-2359.md).
+
+## Coverage update — 23:59 Pacific
+
+Three historical summaries reviewed from June–September 2023; one distinct pending bond attribution lead. Original transcripts unavailable. 50 unique IDs, 5 previously classified confirmed, 37 pending, 8 other defects. No independently verified external repairs. Next target original August 2023 wording and older distinct exchanges. No verified 2021–2022 archive.
