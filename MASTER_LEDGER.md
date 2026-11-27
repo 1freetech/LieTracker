@@ -6,12 +6,12 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 48 |
+| All recorded entries | 49 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
-| Pending investigations | 35 |
+| Pending investigations | 36 |
 | Other technical/editorial defects | 8 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 48 |
+| Unresolved or not independently verified | 49 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -167,6 +167,7 @@ Coverage update: [05:05 audit](incidents/2026-11-26-hourly-0505.md). Older 2021�
 - Prevention: Recheck each extracted figure against source image; disclose illegibility.
 - Status: open; no independent external repair verified.
 - Additional evidence (2026-11-26 prior audit report): Original versus revised daily amounts reportedly were Antminer L9 17 GH/s $55.42 vs $35.31; VolcMiner D1 $50.26 vs $34.99; Antminer L9 16 GH/s $25.12 vs $33.23. These figures are quoted from the prior audit response, not independently recovered transcripts. Original source image remains unavailable; neither set established as correct. Classification remains pending. See [catch-up audit](incidents/2026-11-26-hourly-1837-catchup.md).
+- Evidence supplement (2026-11-26): historical retrieval returned user correction at 2024-11-18 09:53:42 UTC ('totally wrong') and assistant revised amounts at 09:54:03 UTC: L9 17 GH/s $35.31/day, VolcMiner D1 $34.99/day, L9 16 GH/s $33.23/day. These corroborate the previously reported revised figures, not their accuracy. Original image remains unavailable.
 
 ## LT-0017 — Exact growth-rate match disputed
 - Date: 2025-07-30.
@@ -478,3 +479,16 @@ Source: [20:59 audit](incidents/2026-11-26-hourly-2059.md).
 ## Coverage update — 20:59 Pacific
 
 Two pending candidates from April and November 2025; evidence supplements for LT-0019 and LT-0044. 48 distinct IDs, 5 previously classified confirmed, 35 pending, 8 other defects. No independent external repairs. Next seek original exercise and chart artifacts and older distinct exchanges; historical coverage remains non-contiguous.
+
+## LT-0049 — Ethereum mining attribution in post-Merge hardware article
+- Date: 2024-11-18 09:54:27 UTC.
+- Evidence: historical retrieval summarizes a subsequent assistant article as using “Ethereum mining” for Jasminer X44-P. Full sentence and article unavailable; the quoted phrase is from the retrieval summary, not independently recovered verbatim transcript.
+- Classification: pending contextual verification; Ethereum mainnet switched to proof of stake in September 2022, so a literal claim of Ethereum mainnet proof-of-work mining in November 2024 would be inaccurate. Ethereum Classic or another compatible chain may have been intended.
+- Prevention: distinguish algorithm compatibility from active mineable networks and verify chain consensus and hardware specifications at publication date.
+- Status: open; no external repair verified.
+
+Source: [21:57 audit](incidents/2026-11-26-hourly-2157.md).
+
+## Coverage update — 21:57 Pacific
+
+One pending distinct network attribution lead from November 2024; LT-0016 revised amounts corroborated by historical retrieval. 49 distinct IDs, 5 previously classified confirmed, 36 pending, 8 other defects. No independent external repairs. Original article, image, filesystem and exercise answers unavailable. Historical coverage remains non-contiguous; next seek original artifacts and older distinct corrections.
