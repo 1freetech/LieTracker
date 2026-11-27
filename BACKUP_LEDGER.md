@@ -6,12 +6,12 @@ Last consolidated: 2026-11-27. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 57 |
+| All recorded entries | 59 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
 | Pending investigations | 41 |
-| Other technical/editorial defects | 11 |
+| Other technical/editorial defects | 13 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 57 |
+| Unresolved or not independently verified | 59 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -602,3 +602,27 @@ Source: [Retrospective audit](incidents/2026-11-27-hourly-0700-catchup.md).
 ## Repository reconciliation — 2026-11-27 07:13 Pacific
 
 04:02 audit and both ledgers retrieved; previous commits located. Three subsequent missed audit files backfilled separately, with LT-0055–0057 classified as ordinary operational defects. 57 unique entries, 5 previously classified confirmed mismatches, 41 pending investigations, 11 other defects. No new external repairs independently verified. No new original historical retrieval in this targeted reconciliation; preserve 04:02 historical search cursor and resume original-artifact investigation for LT-0052–0054. No verified 2021–2022 archive. See [07:13 reconciliation](incidents/2026-11-27-hourly-0713-reconciliation.md).
+
+## LT-0058 — Missed mandatory repository write (0756 Pacific)
+- Date: 2026-11-27.
+- Evidence: visible audit report explicitly reported zero new commits and incomplete retrieval, historical investigation and readback.
+- Classification: other operational defect; disclosed noncompletion, not a false success claim.
+- Observable cause: mandatory operations not executed; underlying reason unknown. No permission failure established.
+- Prevention: prioritize actual writes and readback over optional investigation.
+- Remedy: retrospective audit record during 10:00 reconciliation; original timing failure remains.
+- Source: [Catch-up audit](incidents/2026-11-27-hourly-0756-catchup.md).
+
+## LT-0059 — Missed mandatory repository write (0900 Pacific)
+- Date: 2026-11-27.
+- Evidence: visible audit report explicitly reported zero new commits and incomplete retrieval, historical investigation and readback.
+- Classification: other operational defect; disclosed noncompletion, not a false success claim.
+- Observable cause: mandatory operations not executed; underlying reason unknown. No permission failure established.
+- Prevention: prioritize actual writes and readback over optional investigation.
+- Remedy: retrospective audit record during 10:00 reconciliation; original timing failure remains.
+- Source: [Catch-up audit](incidents/2026-11-27-hourly-0900-catchup.md).
+
+## Coverage update — 2026-11-27 10:00 Pacific
+
+April 26 2025 user correction for LT-0052 repeated verbatim: “its not an error its just telling him that its a directory”. Retrieved assistant summary reports acknowledgment and description of /var as a directory, “not an error message.” Original command and complete response unavailable; pending classification retained. LT-0053 and LT-0054 original artifacts not recovered. Distinct April 26 2025 draft correction “He hasn’t been selected in 1st 3 rounds” and instructions to verify links were retrieved, but original assistant claims and subject context insufficient to assign new incidents. No verified 2021–2022 archive. Next seek original command and article artifacts and original draft claim. No independently verified external repairs.
+
+Two missed runs backfilled as LT-0058–0059. 59 unique records; 5 previously classified confirmed, 41 pending, 13 other defects. See [10:00 audit](incidents/2026-11-27-hourly-1000.md).
