@@ -528,3 +528,9 @@ Source: [02:02 audit](incidents/2026-11-27-hourly-0202.md).
 ## Coverage update — 2026-11-27 02:02 Pacific
 
 Historical retrieval returned seven dated references across 2024; one distinct pending Python environment workaround lead recorded as LT-0051. Prior corrections deduplicated; other ambiguous claims excluded. 51 distinct IDs, 5 previously classified confirmed, 38 pending, 8 other defects. No independently verified external repairs. No verified 2021–2022 archive or full original transcripts returned. Next target original Flask response and older distinct technical exchanges. Source: [02:02 audit](incidents/2026-11-27-hourly-0202.md).
+
+## Coverage update — 2026-11-27 02:58 Pacific
+
+LT-0051 additional historical retrieval: the August 14, 2024 summary also reports a correct virtual-environment option (`python3 -m venv myenv`, `source myenv/bin/activate`, `pip install Flask`), alongside `pip install --user Flask`, ensurepip and Docker. Thus the potentially incorrect user-site workaround was one alternative, not the sole recommendation. Original full response and user follow-up remain unavailable; pending classification retained. July 15, 2024 Flask typo correction and October 24, 2024 physical-server API description did not establish additional assistant errors. No new IDs. Next seek distinct older technical corrections and original Flask environment context.
+
+Prior 02:02 readback completed; both ledgers matched. Counts unchanged: 51 distinct IDs, 5 previously confirmed, 38 pending, 8 other defects; no independently verified external repairs. Source: [02:58 audit](incidents/2026-11-27-hourly-0258.md).
