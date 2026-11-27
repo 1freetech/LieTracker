@@ -380,3 +380,9 @@ Source: [Historical audit 12:55](incidents/2026-11-26-hourly-1255.md).
 - Status: factual clarification recorded; no external publication or repair verified.
 
 Coverage update: [14:04 audit](incidents/2026-11-26-hourly-1404.md). October 2023 mining attribution lead added; correct arithmetic and duplicate December 2023 lead excluded. No 2021–2022 transcripts retrieved; next target narrower early historical topics and original October wording.
+
+## Coverage update — 15:59 Pacific
+
+Historical search targeted 2021–2022, early 2023, December 18 2023 and March 11 2024; no matching conversations returned. Previous report's two leads remain unsubstantiated (legal interpretation and historical conflict classification); no exact assistant text, no new IDs. Coverage cursor remains non-contiguous; next target narrower date/topic searches and original excerpts. Existing 16 audit files retrieved; latest five commits inspected, including 044bddd0d38095200bba7203b07b7c6673540478. Baseline master and backup content and blob SHA matched; 41 distinct incident headings counted. Existing classifications retained (5 confirmed as previously classified, 29 pending, 7 other defects); no independent external repairs. Preventive rule: never convert a failed historical search or a prior report's unverified lead into a confirmed incident. No private details added.
+
+Source: [Individual audit](incidents/2026-11-26-hourly-1559.md).
