@@ -6,12 +6,12 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 46 |
+| All recorded entries | 48 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
-| Pending investigations | 33 |
+| Pending investigations | 35 |
 | Other technical/editorial defects | 8 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 46 |
+| Unresolved or not independently verified | 48 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -188,6 +188,7 @@ Coverage update: [05:05 audit](incidents/2026-11-26-hourly-0505.md). Older 2021�
 - Classification: Pending; retrieved historical summary, not complete transcript.
 - Prevention: Verify population definition and source before reporting counts.
 - Status: open; no independent external repair verified.
+- Evidence supplement (2026-11-26): retrieved assistant summary at 2025-03-14 06:30:09 UTC reports approximately 200 members annually, over 8,000 hosted scholars and roughly 30 permanent faculty; user disputed the population definition. No contemporaneous primary source or complete transcript retrieved. Pending classification retained.
 
 ## LT-0020 — Bash dash syntax error
 - Date: 2025-04-15.
@@ -424,6 +425,7 @@ Verified 43 unique sequential incident IDs and preserved the existing totals: 5 
 - Classification: pending historical factual claim investigation; not confirmed false.
 - Prevention: specify ranking source, country, chart category and observation time; verify contemporaneous ranking before asserting it.
 - Status: open; no repair verified.
+- Evidence supplement (2026-11-26): retrieved user excerpt at 2024-11-16 14:14:01 UTC: “thats actually wrong as of 11/16/2024 Cash app is the number 1 finance app in the USA followed by PayPal and Coinbase.” Retrieved assistant summary at 13:59:10 UTC attributes a first-place U.S. Apple App Store finance ranking to Coinbase. Original chart snapshot unavailable; pending classification retained.
 
 ## LT-0045 — Filesystem operation in user mode potentially misleading
 - Date: 2024-06-24.
@@ -456,3 +458,23 @@ Source: [20:03 audit](incidents/2026-11-26-hourly-2003.md).
 ## Coverage update — 20:03 Pacific
 
 December 2025 efficiency baseline withdrawal newly recorded as pending LT-0046. Shell syntax and ambiguous miner identification excluded; existing correction topics deduplicated. 46 distinct IDs, 5 previously classified confirmed, 33 pending, 8 other defects. No independent external repairs. No verified 2021–2022 archive or continuous coverage. Next target original chart/source and older distinct exchanges.
+
+## LT-0047 — Troubleshooting exercise answer matching disputed
+- Date: 2025-04-13.
+- Retrieved user correction at 12:50 UTC: identify pictured problems before matching dropdown solutions; at 12:50:50 UTC user disputed assigning the BIOS option to a phone because the laptop also had that option.
+- Classification: pending; original image, dropdown options and exact assistant answer unavailable. Distinct date and subject from LT-0026. No confirmed false claim.
+- Prevention: inspect each pictured device and all answer choices, validate matching constraints before answering, and disclose missing visual evidence.
+- Status: open.
+
+## LT-0048 — Exponential decay chart axis diagnosis disputed
+- Date: 2025-11-27.
+- Retrieved user correction at 18:31:51 UTC: lines must slope down/right according to J(t)=J0(1-r)^(t-2025). Retrieved assistant summary at 18:32:13 UTC attributes rising lines to log-axis inversion and proposes `plt.ylim(0.1, 10)`.
+- Classification: pending original code and plot verification. For 0<r<1 and J0>0, the function decreases; a normal logarithmic axis preserves ordering, whereas reversed limits invert visual direction. The proposed limits alone cannot establish the actual cause. Distinct from earlier crossing, styling and benchmark disputes.
+- Prevention: check sampled numerical values, axis orientation and actual render before diagnosing chart direction.
+- Status: mathematical clarification recorded; original chart unavailable, no external repair verified.
+
+Source: [20:59 audit](incidents/2026-11-26-hourly-2059.md).
+
+## Coverage update — 20:59 Pacific
+
+Two pending candidates from April and November 2025; evidence supplements for LT-0019 and LT-0044. 48 distinct IDs, 5 previously classified confirmed, 35 pending, 8 other defects. No independent external repairs. Next seek original exercise and chart artifacts and older distinct exchanges; historical coverage remains non-contiguous.
