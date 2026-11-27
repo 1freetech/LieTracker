@@ -6,12 +6,12 @@ Last consolidated: 2026-11-27. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 61 |
+| All recorded entries | 63 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
-| Pending investigations | 42 |
+| Pending investigations | 44 |
 | Other technical/editorial defects | 14 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 61 |
+| Unresolved or not independently verified | 63 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -651,3 +651,25 @@ Two missed runs backfilled as LT-0058–0059. 59 unique records; 5 previously cl
 ## Coverage update — 2026-11-27 13:03 Pacific
 
 LT-0054 supplementary evidence: February 20 2025 23:56:32 UTC user requested “put the number of bits added and all the other metric numerical data please”; February 21 00:14:28 UTC requested “need picture of ecc ram.” Retrieved assistant summary reports subsequent metrics and an image prompt; original article and image delivery unavailable. Pending classification retained, no duplicate ID. February 20 TCP FIN article summary reports image-generation claim but no contradictory evidence; no incident assigned. Original IBM–AMD and draft artifacts not recovered. 61 unique entries, 5 previously classified confirmed, 42 pending, 14 other defects. No independently verified external repairs or verified 2021–2022 archive. Next seek original artifacts and distinct older corrections. See [13:03 audit](incidents/2026-11-27-hourly-1303.md).
+
+## LT-0062 — IBM investment article placeholder source link
+- Date: 2025-05-11 02:02:49 UTC.
+- Evidence: retrieved assistant-output summary reports an IBM $150 billion investment article containing a placeholder URL `timesofinnovation.com/...` and a Bing image URL. Original complete article unavailable.
+- Classification: pending original-output verification; distinct from August 2025 IBM–AMD article LT-0053. The investment amount itself is not classified as false.
+- Prevention: validate complete source URLs before delivery; do not present placeholder citations as sources.
+- Status: open; no independently verified external repair.
+
+## LT-0063 — Bitcoin article image completion claim
+- Date: 2025-05-11 01:55:59–01:57:57 UTC.
+- Evidence: retrieved assistant-output summary reports a linked stock image in an earlier output and the subsequent statement “Image created.” Actual generated attachment and complete conversation unavailable.
+- Classification: pending; stock image linkage alone does not prove a later image was not generated.
+- Prevention: distinguish linked imagery, prompts and actual generated output; verify attachment delivery before claiming completion.
+- Status: open; no independently verified external repair.
+
+Source: [14:03 audit](incidents/2026-11-27-hourly-1403.md).
+
+## Coverage update — 2026-11-27 14:03 Pacific
+
+LT-0053 supplementary evidence: August 27 2025 00:39:21 UTC assistant-output summary reports placeholder URLs `https://newsroom.ibm.com/...` and `https://www.investors.com/...` and a “Cover Image Generation” heading without a generated image in retrieved material. At 00:40:17 UTC summary reports “Generated Cover Image” with an external example link and retained placeholders. At 01:39:43 UTC retrieved user correction: “If there isnt an actual link then dont put the link”. User also required actual image delivery and web verification. This strengthens existing pending entry; no duplicate ID. Original full transcript and attachment history remain unavailable. May 11 2025 two distinct article leads recorded as LT-0062–0063 after checking existing ledger for dates and distinctive terms. July 31 2025 chart argument error was reportedly acknowledged; insufficient context to establish uncorrected defect or false completion. March 29 2025 Linux training resource claims and November 19 2025 certification claims lack verification or contradictory evidence; no incident assigned. April 2024 brightness troubleshooting and April 2025 display troubleshooting summaries do not establish an error. Private employment-related material excluded. Original April 26 draft response not recovered. Next seek May 11 original article/attachments, August 27 original article and distinct older corrections. No verified 2021–2022 archive. Historical retrieval selective, not exhaustive.
+
+63 unique entries, 5 previously classified confirmed, 44 pending, 14 other defects. See [14:03 audit](incidents/2026-11-27-hourly-1403.md).
