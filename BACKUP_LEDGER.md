@@ -6,12 +6,12 @@ Last consolidated: 2026-11-26. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 43 |
+| All recorded entries | 45 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
-| Pending investigations | 30 |
+| Pending investigations | 32 |
 | Other technical/editorial defects | 8 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 43 |
+| Unresolved or not independently verified | 45 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -166,6 +166,7 @@ Coverage update: [05:05 audit](incidents/2026-11-26-hourly-0505.md). Older 2021�
 - Classification: Pending; retrieved historical summary, not complete transcript.
 - Prevention: Recheck each extracted figure against source image; disclose illegibility.
 - Status: open; no independent external repair verified.
+- Additional evidence (2026-11-26 prior audit report): Original versus revised daily amounts reportedly were Antminer L9 17 GH/s $55.42 vs $35.31; VolcMiner D1 $50.26 vs $34.99; Antminer L9 16 GH/s $25.12 vs $33.23. These figures are quoted from the prior audit response, not independently recovered transcripts. Original source image remains unavailable; neither set established as correct. Classification remains pending. See [catch-up audit](incidents/2026-11-26-hourly-1837-catchup.md).
 
 ## LT-0017 — Exact growth-rate match disputed
 - Date: 2025-07-30.
@@ -416,3 +417,24 @@ Source: [Individual incident audit](incidents/2026-11-26-bitmain-public-display-
 ## Ledger reconciliation — 2026-11-26
 
 Verified 43 unique sequential incident IDs and preserved the existing totals: 5 previously classified confirmed mismatches, 30 pending investigations and 8 other defects. LT-0042 and LT-0043 already had separate incident files and synchronized ledger commits; no duplicate records added. Both cumulative files matched before this update. No new external repair independently verified. Historical coverage remains non-contiguous; original 2021–2022 records are unavailable through prior reported searches, not audited. Full archive-file read was limited by the tool-call budget; the two newest incident files and 15:59 audit were individually checked. See [reconciliation audit](incidents/2026-11-26-ledger-reconciliation.md) for the explicit ID classification breakdown and limitations.
+
+## LT-0044 — Coinbase finance-app ranking disputed
+- Date: 2024-11-16.
+- Evidence: prior hourly audit response reported a user dispute over an incorrect Coinbase finance-app ranking. Exact rank, region, platform, timestamp and original transcript were not retrieved independently in this catch-up.
+- Classification: pending historical factual claim investigation; not confirmed false.
+- Prevention: specify ranking source, country, chart category and observation time; verify contemporaneous ranking before asserting it.
+- Status: open; no repair verified.
+
+## LT-0045 — Filesystem operation in user mode potentially misleading
+- Date: 2024-06-24.
+- Evidence: prior hourly audit response identified a potentially misleading explanation of filesystem operation in user mode. Exact original question and answer were not retrieved independently in this catch-up.
+- Classification: pending historical technical claim investigation; not confirmed false.
+- Clarification: ordinary applications can request filesystem operations through system calls; kernel and user-space filesystem implementations differ. The original context is needed to assess the disputed answer.
+- Prevention: distinguish user-space API requests, kernel execution and user-space filesystem implementations before asserting where an operation occurs.
+- Status: open; no repair verified.
+
+Source: [Hourly catch-up audit](incidents/2026-11-26-hourly-1837-catchup.md).
+
+## Coverage update — 18:37 Pacific
+
+Two pending leads from the preceding audit recorded as LT-0044 and LT-0045; LT-0016 supplemented without double counting. 45 unique records, 5 previously confirmed mismatches, 32 pending investigations, 8 other defects. No independently verified external repairs. Historical retrieval was not repeated; original 2021–2022 archives remain unverified. Prioritize repository writes and readback before optional investigation expansion.
