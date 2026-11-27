@@ -6,12 +6,12 @@ Last consolidated: 2026-11-27. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 63 |
+| All recorded entries | 65 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
-| Pending investigations | 44 |
+| Pending investigations | 46 |
 | Other technical/editorial defects | 14 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 63 |
+| Unresolved or not independently verified | 65 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -673,3 +673,23 @@ Source: [14:03 audit](incidents/2026-11-27-hourly-1403.md).
 LT-0053 supplementary evidence: August 27 2025 00:39:21 UTC assistant-output summary reports placeholder URLs `https://newsroom.ibm.com/...` and `https://www.investors.com/...` and a “Cover Image Generation” heading without a generated image in retrieved material. At 00:40:17 UTC summary reports “Generated Cover Image” with an external example link and retained placeholders. At 01:39:43 UTC retrieved user correction: “If there isnt an actual link then dont put the link”. User also required actual image delivery and web verification. This strengthens existing pending entry; no duplicate ID. Original full transcript and attachment history remain unavailable. May 11 2025 two distinct article leads recorded as LT-0062–0063 after checking existing ledger for dates and distinctive terms. July 31 2025 chart argument error was reportedly acknowledged; insufficient context to establish uncorrected defect or false completion. March 29 2025 Linux training resource claims and November 19 2025 certification claims lack verification or contradictory evidence; no incident assigned. April 2024 brightness troubleshooting and April 2025 display troubleshooting summaries do not establish an error. Private employment-related material excluded. Original April 26 draft response not recovered. Next seek May 11 original article/attachments, August 27 original article and distinct older corrections. No verified 2021–2022 archive. Historical retrieval selective, not exhaustive.
 
 63 unique entries, 5 previously classified confirmed, 44 pending, 14 other defects. See [14:03 audit](incidents/2026-11-27-hourly-1403.md).
+
+## LT-0064 — Bhutan Bitcoin article malformed text and placeholder citations
+- Date: 2024-11-25 10:20:57 UTC.
+- Evidence: historical assistant-output summary reports omitted initial letters, placeholder citations and an image URL in a Bhutan Bitcoin article. Original complete text unavailable.
+- Classification: pending original-output verification; no specific factual claim established false.
+- Prevention: proofread complete article and validate source links before delivery.
+- Status: open.
+
+## LT-0065 — MARAPool image completion claim
+- Date: 2025-03-22 04:46:39 UTC.
+- Evidence: historical assistant-output summary reports a claim that the story, SEO materials and requested MARAPool image were complete; no actual image artifact or link is shown in retrieved material.
+- Classification: pending; missing attachment evidence does not prove non-delivery.
+- Prevention: verify actual generated attachment before claiming completion.
+- Status: open.
+
+Source: [15:03 audit](incidents/2026-11-27-hourly-1503.md).
+
+## Coverage update — 2026-11-27 15:03 Pacific
+
+Historical retrieval revisited May 11 and August 27 2025 article summaries; no original full transcripts or attachments recovered. Existing LT-0053, LT-0062 and LT-0063 retained without duplication. Two distinct pending leads LT-0064–0065 added after checking ledger for subject and date. May 16 2025 Brown University image request and prompt-only response screened; no explicit false completion claim or complete delivery history, so no new incident. August 2 and November 2 2024 image-link contexts screened without contradictory evidence. Next seek original Bhutan article and MARAPool attachment, and distinct older corrections. No verified 2021–2022 archive. No external repairs verified. 65 unique entries: 5 previously classified confirmed, 46 pending, 14 other defects.
