@@ -438,3 +438,7 @@ Source: [Hourly catch-up audit](incidents/2026-11-26-hourly-1837-catchup.md).
 ## Coverage update — 18:37 Pacific
 
 Two pending leads from the preceding audit recorded as LT-0044 and LT-0045; LT-0016 supplemented without double counting. 45 unique records, 5 previously confirmed mismatches, 32 pending investigations, 8 other defects. No independently verified external repairs. Historical retrieval was not repeated; original 2021–2022 archives remain unverified. Prioritize repository writes and readback before optional investigation expansion.
+
+## Coverage update — 19:02 Pacific
+
+Targeted historical retrieval for December 2023 legal interpretation, March 2024 military history, June 2024 filesystem user-mode claim, November 2024 app ranking and older corrections returned no relevant original assistant responses. One unrelated user question excluded. No new IDs or reclassifications; 45 distinct entries (5 previously classified confirmed, 32 pending, 8 other), no independently verified external repairs. Historical coverage remains non-contiguous; next target narrower individual topics and older distinct corrections. See [hourly audit](incidents/2026-11-26-hourly-1902.md).
