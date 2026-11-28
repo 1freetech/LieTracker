@@ -6,12 +6,12 @@ Last consolidated: 2026-11-27. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 67 |
+| All recorded entries | 72 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
-| Pending investigations | 46 |
-| Other technical/editorial defects | 16 |
+| Pending investigations | 49 |
+| Other technical/editorial defects | 18 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 67 |
+| Unresolved or not independently verified | 72 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -723,3 +723,48 @@ Source: [16:57 retrospective audit](incidents/2026-11-27-hourly-1657-catchup.md)
 ## Repository reconciliation — 2026-11-27 16:57 Pacific
 
 Verified latest baseline and recent Git history. Backfilled missing 16:03 and 16:57 runs separately and recorded LT-0066–0067 as operational defects. 67 unique entries: 5 previously classified confirmed mismatches, 46 pending investigations, 16 other defects; no independently verified external repairs. Historical cursor remains at 15:03; targeted manual repository repair only. See [16:57 reconciliation](incidents/2026-11-27-manual-1657-reconciliation.md).
+
+## LT-0068 — Mandatory audit execution omitted — 18:00
+- Date: 2026-11-27 18:00 Pacific.
+- Evidence: visible assistant report: “The current run did not execute the required repository retrieval, historical investigation, commits or readback verification.” Repository tree and recent history show no corresponding writes.
+- Classification: other operational defect, explicitly disclosed; not false completion.
+- Observable cause: required operations omitted; underlying cause unknown, no permission failure established.
+- Prevention: perform persistence and readback before reporting; reserve calls for zero-finding audits and retry actual errors using fresh SHAs.
+- Correction: retrospective record written at 20:01; original missed execution remains a defect.
+
+Source: [18:00 audit](incidents/2026-11-27-hourly-1800-catchup.md).
+
+## LT-0069 — Mandatory audit execution omitted — 19:01
+- Date: 2026-11-27 19:01 Pacific.
+- Evidence: visible report states “The mandatory GitHub retrieval, historical investigation, commits and post-write verification were not executed during the current run.” No corresponding audit file in inspected tree.
+- Classification: other operational defect, disclosed; not false completion.
+- Cause: required operations omitted; underlying cause unknown.
+- Prevention: prioritize actual writes and readback.
+- Correction: retrospective backfill; original omission remains recorded.
+
+Source: [19:01 audit](incidents/2026-11-27-hourly-1901-catchup.md).
+
+## LT-0070 — Bhutan article placeholder citations
+- Date: 2024-11-13.
+- Evidence: prior 20:01 audit report describes placeholder citations; original response unavailable. Pending distinct-occurrence verification against LT-0064.
+- Classification: pending investigation.
+- Prevention: verify full citation URLs.
+
+## LT-0071 — Placeholder citations despite verification instructions
+- Date: 2024-11-16.
+- Evidence: prior 20:01 report identifies placeholder citations; original response unavailable. Pending verification, not a confirmed false claim.
+- Classification: pending investigation.
+- Prevention: validate citations before delivery.
+
+## LT-0072 — Placeholder source URLs
+- Date: 2025-04-23.
+- Evidence: prior 20:01 report identifies placeholder URLs; original response unavailable.
+- Classification: pending investigation.
+- Prevention: validate full source URLs.
+
+Source: [20:01 audit](incidents/2026-11-27-hourly-2001-catchup.md).
+
+## Coverage update — 2026-11-27 20:57 Pacific
+
+Read README, both full ledgers, recursive tree, recent history, 16:57 reconciliation and 18:00 backfill. Baseline 67 entries and matching blob 845c620dd0fa2fde3274b648e657cfb613f93057. Recovered 18:00 audit from repository and backfilled 19:01 and 20:01 reports. Consolidate five previously proposed IDs: two operational defects and three pending leads. Counts 72 total, 5 previously classified confirmed, 49 pending, 18 other defects, zero independently verified external repairs. Historical cursor: prior 20:01 reported investigation; original transcripts not independently recovered in this pass. Next verify distinct occurrences and original citations. No verified 2021–2022 archive. No new historical search in this reconciliation pass.
+LT-0064 supplementary lead: holdings valued relative to GDP are not GDP contribution; original wording unavailable. See [20:57 audit](incidents/2026-11-27-hourly-2057.md).
