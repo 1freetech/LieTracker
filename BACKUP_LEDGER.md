@@ -940,3 +940,9 @@ Targeted historical retrieval for LT-0054, LT-0062, LT-0063 and LT-0065 returned
 LT-0054: individual retrieval recovered dated assistant-output summaries at 2025-02-20 23:53:48 UTC (opening reportedly “rror Correcting Code (ECC) RAM…”), 23:56:57 UTC (expanded restored version), and 2025-02-21 00:14:43 UTC (illustration delivery statement). These corroborate the earlier lead and reported revision, but do not independently establish original artifact bytes or image delivery. Other retrieved February 20 outputs concern different topics; similar truncation in retrieval raises the possibility of retrieval artifacts. Retain pending classification. Prevention: inspect actual published text and attachment rather than relying on summaries. LT-0065 and older 2023 correction combined retrieval returned no matches. Next cursor: individual LT-0062 and LT-0063 searches, original ECC artifact and older unreviewed topics.
 
 Counts unchanged. [Audit](incidents/2026-11-28-hourly-0504.md).
+
+## Coverage update — 2026-11-28 06:00 Pacific
+
+Targeted historical retrieval for LT-0062 (May 11 2025 IBM investment article source URL) and LT-0063 (May 11 2025 Bitcoin image completion and attachment) returned no matching conversations or relevant files. Original URLs and attachment remain unavailable. No new evidence warrants reclassification. Next cursor: separate individual topic searches for these two cases and older unreviewed corrections. Do not infer non-delivery from missing retrieval.
+
+Counts unchanged. [Audit](incidents/2026-11-28-hourly-0600.md).
