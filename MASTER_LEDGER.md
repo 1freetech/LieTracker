@@ -789,3 +789,6 @@ Source: [Video dispute](incidents/2026-11-27-osrtc019-video-dispute.md).
 - Status: article insertion independently verified via WordPress readback; full visual QA not verified.
 
 Source: [Chart omission correction](incidents/2026-11-27-praxis-1-chart-omission.md).
+
+### User-mandated article–conversation parity rule
+The user explicitly marked LT-0074 as a lie and instructed: “Whatever u do in the conversation do in the article”. Record their designation without inferring intent. Every story-relevant chart, table, calculation, equation, graphic, video, social embed, technical explanation and comparison presented in the publication conversation must also be incorporated into the corresponding article, with source attribution and appropriate Gutenberg formatting. Save and independently read back each item before claiming publication is complete. If a later response adds substantive editorial material, update the existing article and verify it before reporting. Keep private QA, blockers, internal instructions and conversational commentary out of the article. Report any unfulfilled item separately; never imply it was published. Preserve LT-0074 as one incident, not a duplicate.
