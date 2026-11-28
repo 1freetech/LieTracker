@@ -922,3 +922,7 @@ Reviewed every one of the 50 previously pending IDs; 1 confirmed factual mismatc
 | LT-0071 | Pending evidence | November 16 placeholder report lacks original output and actual source URLs. Cannot establish claim or unique deliverable beyond prior summary. |
 | LT-0072 | Pending evidence | April 23 placeholder report lacks original article and links. No new evidence confirming literal URL. |
 | LT-0073 | Other documented defect (specific finding resolved; any residual evidence gap retained) | Documented initial lesson had zero videos; current WordPress readback of published 36144 contains DWSqZAFaJ2I and uz6Cm-v2bww. Classify established instructional media omission and premature assurance as other defect; original actual playback dispute remains unverified. No claim that either video played. |
+
+## Coverage update — 2026-11-28 02:03 Pacific
+
+Targeted retrieval for LT-0026, LT-0032, LT-0035 and LT-0033 returned no matches. No classification or count changes. Next target original citation artifacts and dated chart datasets. [Hourly audit](incidents/2026-11-28-hourly-0203.md).
