@@ -6,12 +6,12 @@ Last consolidated: 2026-11-27. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 72 |
+| All recorded entries | 73 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
-| Pending investigations | 49 |
+| Pending investigations | 50 |
 | Other technical/editorial defects | 18 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 72 |
+| Unresolved or not independently verified | 73 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -768,3 +768,13 @@ Source: [20:01 audit](incidents/2026-11-27-hourly-2001-catchup.md).
 
 Read README, both full ledgers, recursive tree, recent history, 16:57 reconciliation and 18:00 backfill. Baseline 67 entries and matching blob 845c620dd0fa2fde3274b648e657cfb613f93057. Recovered 18:00 audit from repository and backfilled 19:01 and 20:01 reports. Consolidate five previously proposed IDs: two operational defects and three pending leads. Counts 72 total, 5 previously classified confirmed, 49 pending, 18 other defects, zero independently verified external repairs. Historical cursor: prior 20:01 reported investigation; original transcripts not independently recovered in this pass. Next verify distinct occurrences and original citations. No verified 2021–2022 archive. No new historical search in this reconciliation pass.
 LT-0064 supplementary lead: holdings valued relative to GDP are not GDP contribution; original wording unavailable. See [20:57 audit](incidents/2026-11-27-hourly-2057.md).
+
+## LT-0073 — Lesson video omission and disputed verification
+- Date: 2026-11-27 Pacific.
+- User correction: “Make sure the lessons have videos”; then “Mark the lie . Next lesson”.
+- Evidence: OSRTC.019 post #36144 initially published with video_embeds=0 despite instructional multimedia requirements. Follow-up added two rendered YouTube iframes; assistant explicitly stated actual playback and mobile testing unverified. User disputes the result. Both video identities independently matched RoboDK public YouTube listings on recheck; both automation prompt changes subsequently confirmed via readback. No actual playback evidence available. The initial publication omitted videos, and the assistant announced automation completion before receiving visible confirmation.
+- Classification: confirmed operational omission and premature completion assurance; user-disputed video playback remains unresolved, not proven false playback claim. Count as one disputed incident pending investigation, not as a proven deliberate lie.
+- Corrective rule: require source identification, exact rendered player IDs, actual playback test and mobile check before declaring working videos; verify automation readback before claiming success. Mark blocked tests separately.
+- Status: open for real playback and user-reported failure investigation. No false claim of playback inferred.
+
+Source: [Video dispute](incidents/2026-11-27-osrtc019-video-dispute.md).
