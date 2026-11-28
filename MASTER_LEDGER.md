@@ -6,14 +6,14 @@ Last consolidated: 2026-11-27. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 73 |
+| All recorded entries | 74 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
 | Pending investigations | 50 |
-| Other technical/editorial defects | 18 |
-| Independently verified external repairs | 0 |
+| Other technical/editorial defects | 19 |
+| Independently verified external repairs | 1 |
 | Unresolved or not independently verified | 73 |
 
-Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
+Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. One chart insertion has been independently verified through WordPress readback; browser visual QA remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
 ## Source audit files
 
@@ -778,3 +778,14 @@ LT-0064 supplementary lead: holdings valued relative to GDP are not GDP contribu
 - Status: open for real playback and user-reported failure investigation. No false claim of playback inferred.
 
 Source: [Video dispute](incidents/2026-11-27-osrtc019-video-dispute.md).
+
+## LT-0074 — Published article omitted chart shown in response
+- Date: 2026-11-27 Pacific.
+- Evidence: user supplied screenshot of chart and identified that it was in conversation but not Praxis-1 article #36180. Before edit, WordPress section listing contained no latency chart.
+- Classification: confirmed editorial defect; not a proven false statement or deliberate lie.
+- Root cause: response-only visualization treated separately from article production.
+- Correction: exact supplied chart uploaded as media #36200 and inserted as Gutenberg image immediately after benchmark paragraph, with source attribution. Independent WordPress view confirmed one chart, correct placement, published status and preservation of YouTube, X and native MP4. Browser visual inspection remains unverified.
+- Preventive rule: insert and independently read back every relevant chart before presenting it in a publication response; use existing article ID for corrections. Do not treat chat-only visualization as published media.
+- Status: article insertion independently verified via WordPress readback; full visual QA not verified.
+
+Source: [Chart omission correction](incidents/2026-11-27-praxis-1-chart-omission.md).
