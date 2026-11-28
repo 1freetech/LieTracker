@@ -1,6 +1,6 @@
 # LieTracker — Master Ledger
 
-Last consolidated: 2026-11-27. Canonical cumulative incident record; preserve every stable incident ID and supporting evidence. Historical summaries are not full transcripts; no intent to deceive is inferred. Counts describe recorded entries only, not all conversations.
+Last consolidated: 2026-11-28. Canonical cumulative incident record; preserve every stable incident ID and supporting evidence. Historical summaries are not full transcripts; no intent to deceive is inferred. Counts describe recorded entries only, not all conversations.
 
 ## Cumulative totals
 
@@ -846,3 +846,7 @@ Source: [HashRace schedule disabling](incidents/2026-11-27-hashrace-schedule-dis
 ## Repository reconciliation — 2026-11-27 23:41 Pacific
 
 Backfilled 22:01 and 22:57 missed runs (LT-0076–0077) and consolidated the previously separate HashRace incident (LT-0078). Preserved LT-0073–0075 and all prior evidence. 78 entries: 6 previously classified confirmed, 50 pending, 22 other defects; 1 previously independently verified external repair retained. No fresh historical transcript search or external repair verification in this manual pass; retain prior historical cursor. See [23:41 reconciliation](incidents/2026-11-27-manual-2341-reconciliation.md).
+
+## Coverage update — 2026-11-28 00:00 Pacific
+
+Baseline reconciled; historical retrieval screened July 23 and July 29–30 2025 and May–July thesis summaries. No new unique incident. Prior citation and MARAPool evidence still missing. No verified 2021–2022 archive. See [00:00 audit](incidents/2026-11-28-hourly-0000.md).
