@@ -926,3 +926,7 @@ Reviewed every one of the 50 previously pending IDs; 1 confirmed factual mismatc
 ## Coverage update — 2026-11-28 02:03 Pacific
 
 Targeted retrieval for LT-0026, LT-0032, LT-0035 and LT-0033 returned no matches. No classification or count changes. Next target original citation artifacts and dated chart datasets. [Hourly audit](incidents/2026-11-28-hourly-0203.md).
+
+## Coverage update — 2026-11-28 02:57 Pacific
+
+Supplementary retrieval for LT-0064: November 25 2024 10:24 UTC assistant-output summary reports truncated/placeholder crypto-publication URLs and holdings/GDP figures; original literal links and complete article unavailable. November 13 user citation requirement recovered, but no distinct defective output established for LT-0070. LT-0071–0072 and LT-0017–0018/LT-0027 original artifacts not recovered. Counts unchanged. Next target original article versions, source URLs and dated datasets. [Audit](incidents/2026-11-28-hourly-0257.md).
