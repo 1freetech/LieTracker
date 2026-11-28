@@ -6,12 +6,12 @@ Last consolidated: 2026-11-28. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 78 |
+| All recorded entries | 79 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 6 |
 | Pending investigations | 50 |
-| Other technical/editorial defects | 22 |
+| Other technical/editorial defects | 23 |
 | Independently verified external repairs | 1 |
-| Unresolved or not independently verified | 77 |
+| Unresolved or not independently verified | 78 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. One chart insertion has been independently verified through WordPress readback; browser visual QA remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -850,3 +850,18 @@ Backfilled 22:01 and 22:57 missed runs (LT-0076–0077) and consolidated the pre
 ## Coverage update — 2026-11-28 00:00 Pacific
 
 Baseline reconciled; historical retrieval screened July 23 and July 29–30 2025 and May–July thesis summaries. No new unique incident. Prior citation and MARAPool evidence still missing. No verified 2021–2022 archive. See [00:00 audit](incidents/2026-11-28-hourly-0000.md).
+
+## LT-0079 — Mandatory audit repository write omitted — 01:00 run
+- Date: 2026-11-28 01:00 Pacific.
+- Evidence: visible assistant report stated “The mandatory repository retrieval, historical investigation, commits and readback verification were not executed during the current run.” It reported zero commits. Current repository tree contained no 01:00 audit file; latest commit history confirmed the midnight synchronization.
+- Classification: other operational defect; incomplete execution was disclosed, not a false success claim.
+- Observable cause: required operations not executed; underlying cause unknown. No permission failure established.
+- Correction: backfill the missing audit and consolidate into both ledgers on manual request; original missed execution cannot be made timely retroactively.
+- Prevention: perform actual repository operations before optional historical investigation consumes the available resources; save even zero-finding runs; distinguish an unattempted operation from a failed attempt.
+- Status: original execution defect retained; retrospective persistence subject to readback.
+
+Source: [01:00 retrospective audit](incidents/2026-11-28-hourly-0100-catchup.md).
+
+## Repository reconciliation — 2026-11-28 01:00 Pacific
+
+Backfilled the missed 01:00 audit and consolidated LT-0079. Baseline and midnight audit checked against Git history; prior 78 IDs preserved. 79 entries: 6 previously classified confirmed mismatches, 50 pending, 23 other defects; 1 previously independently verified external repair. No new historical retrieval or external repair verification in this manual pass; retain midnight historical coverage cursor. See [01:00 reconciliation](incidents/2026-11-28-hourly-0100-catchup.md).
