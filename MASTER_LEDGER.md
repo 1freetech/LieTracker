@@ -6,12 +6,12 @@ Last consolidated: 2026-11-27. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 75 |
+| All recorded entries | 78 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 6 |
 | Pending investigations | 50 |
-| Other technical/editorial defects | 19 |
+| Other technical/editorial defects | 22 |
 | Independently verified external repairs | 1 |
-| Unresolved or not independently verified | 74 |
+| Unresolved or not independently verified | 77 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. One chart insertion has been independently verified through WordPress readback; browser visual QA remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -809,3 +809,40 @@ The user explicitly marked LT-0074 as a lie and instructed: “Whatever u do in 
 - **Status:** Open for full cover verification and watermark compliance. User-designated lie recorded once.
 
 Source: [Starfield cover verification incident](incidents/2026-11-27-starfield-cover-verification.md).
+
+## LT-0076 — Mandatory audit repository write omitted — 22:01 run
+- Date: 2026-11-27 22:01 Pacific.
+- Evidence: visible assistant report: “The mandatory repository retrieval, historical investigation, commits and readback verification were not executed during the current run.” The report stated zero new commits. Current repository tree had no corresponding hourly audit file; other project incident commits occurred separately.
+- Classification: other operational defect, not a false success claim; incomplete execution was disclosed.
+- Observable cause: required operations not executed. Underlying cause unknown; no permission failure established.
+- Prevention: execute actual writes and readback before optional historical search exhausts resources; save even zero-finding runs; distinguish an unattempted operation from an actual tool failure.
+- Corrective action: retrospective record written at manual 23:41 reconciliation. Original timing failure cannot be reversed.
+- Status: historical execution defect retained; retrospective persistence subject to readback.
+
+Source: [22:01 retrospective audit](incidents/2026-11-27-hourly-2201-catchup.md).
+
+## LT-0077 — Mandatory audit repository write omitted — 22:57 run
+- Date: 2026-11-27 22:57 Pacific.
+- Evidence: visible assistant report: “The mandatory GitHub retrieval, historical investigation, commits and post-write verification were not executed during the current run.” The report stated zero new commits. Current repository tree had no corresponding hourly audit file; other project incident commits occurred separately.
+- Classification: other operational defect, not a false success claim; incomplete execution was disclosed.
+- Observable cause: required operations not executed. Underlying cause unknown; no permission failure established.
+- Prevention: execute actual writes and readback before optional historical search exhausts resources; save even zero-finding runs; distinguish an unattempted operation from an actual tool failure.
+- Corrective action: retrospective record written at manual 23:41 reconciliation. Original timing failure cannot be reversed.
+- Status: historical execution defect retained; retrospective persistence subject to readback.
+
+Source: [22:57 retrospective audit](incidents/2026-11-27-hourly-2257-catchup.md).
+
+## LT-0078 — HashRace schedule disabling limitation claim
+- Date: 2026-11-27 Pacific.
+- Evidence: existing individual incident file records the assistant statement “However, I could not execute or verify the disabling action.” It reports no preceding attempt or error, and reports a successful disable operation at 22:13 Pacific, returning disabled status. User explicitly flagged the limitation claim.
+- Classification: other operational defect / unsupported limitation claim; distinct from LT-0013, which concerns a different automation and an unsupported success statement. Prior availability and intent not established.
+- Observable cause: inability reported without a documented attempt or concrete blocker.
+- Corrective action: disabling success reported in original incident record; current automation state not independently rechecked in this repository-only pass. Do not increment independently verified external repair count without current independent verification.
+- Prevention: attempt authorized hard-stop actions before claiming inability; verify resulting state and distinguish not attempted from attempted and failed.
+- Status: user-designated incident consolidated; historical capability claim unresolved; original corrective result preserved by reference.
+
+Source: [HashRace schedule disabling](incidents/2026-11-27-hashrace-schedule-disable.md), existing commit fcc6e6dec21a42fb8623d0296b6eca5e8cb31408.
+
+## Repository reconciliation — 2026-11-27 23:41 Pacific
+
+Backfilled 22:01 and 22:57 missed runs (LT-0076–0077) and consolidated the previously separate HashRace incident (LT-0078). Preserved LT-0073–0075 and all prior evidence. 78 entries: 6 previously classified confirmed, 50 pending, 22 other defects; 1 previously independently verified external repair retained. No fresh historical transcript search or external repair verification in this manual pass; retain prior historical cursor. See [23:41 reconciliation](incidents/2026-11-27-manual-2341-reconciliation.md).
