@@ -6,12 +6,12 @@ Last consolidated: 2026-11-27. Canonical cumulative incident record; preserve ev
 
 | Category | Count |
 |---|---:|
-| All recorded entries | 65 |
+| All recorded entries | 67 |
 | Confirmed claim/completion mismatches (as classified in source audits) | 5 |
 | Pending investigations | 46 |
-| Other technical/editorial defects | 14 |
+| Other technical/editorial defects | 16 |
 | Independently verified external repairs | 0 |
-| Unresolved or not independently verified | 65 |
+| Unresolved or not independently verified | 67 |
 
 Two confirmed classifications rely on recalled assistant evidence; LT-0015 is supported by user-provided screenshots and the visible conversation. External repair verification remains incomplete. Do not count technical defects as separate false claims without evidence. The lifetime total is unknown.
 
@@ -697,3 +697,29 @@ Historical retrieval revisited May 11 and August 27 2025 article summaries; no o
 ## Repository reconciliation — 2026-11-27 15:50 Pacific
 
 Verified README, full master and backup contents, incident directory, 15:03 individual audit and recent Git history. All 65 sequential IDs present, both ledgers identical before writing, and 15:03 audit/master/backup commits located. No missing latest-run records or additional incidents identified. Counts retained: 5 previously classified confirmed mismatches, 46 pending investigations, 14 other defects; 0 independently verified external repairs. Historical cursor remains at 15:03; no new transcript search conducted in this targeted repository pass. See [15:50 reconciliation](incidents/2026-11-27-hourly-1550-reconciliation.md).
+
+## LT-0066 — Mandatory audit repository write omitted — 16:03 run
+- Date: 2026-11-27 16:03 Pacific.
+- Evidence: visible assistant audit report: “The current audit did not execute the mandatory GitHub retrieval, historical investigation, commits or post-write verification.” The report identified zero new commits. Repository tree and history reviewed at manual reconciliation contain no intervening audit record or ledger update.
+- Classification: other operational defect; incomplete work was explicitly disclosed, not a confirmed false completion claim.
+- Observable cause: mandated retrieval, persistence and verification steps were not executed. No permission failure established; underlying cause unknown.
+- Prevention: prioritize actual repository writes and readback every run; reserve sufficient tool calls, save zero-finding reports, and retry actual write errors using fresh SHAs.
+- Corrective action: retrospective record backfilled at manual 16:57 reconciliation; original missed execution cannot be made timely retroactively.
+- Status: original execution defect remains recorded; retrospective persistence subject to readback.
+
+Source: [16:03 retrospective audit](incidents/2026-11-27-hourly-1603-catchup.md).
+
+## LT-0067 — Mandatory audit repository write omitted — 16:57 run
+- Date: 2026-11-27 16:57 Pacific.
+- Evidence: visible assistant audit report: “The mandatory repository retrieval, historical investigation, commits and post-write verification were not executed during the current run.” The report identified zero new commits. Repository tree and history reviewed at manual reconciliation contain no intervening audit record or ledger update.
+- Classification: other operational defect; incomplete work was explicitly disclosed, not a confirmed false completion claim.
+- Observable cause: mandated retrieval, persistence and verification steps were not executed. No permission failure established; underlying cause unknown.
+- Prevention: prioritize actual repository writes and readback every run; reserve sufficient tool calls, save zero-finding reports, and retry actual write errors using fresh SHAs.
+- Corrective action: retrospective record backfilled at manual 16:57 reconciliation; original missed execution cannot be made timely retroactively.
+- Status: original execution defect remains recorded; retrospective persistence subject to readback.
+
+Source: [16:57 retrospective audit](incidents/2026-11-27-hourly-1657-catchup.md).
+
+## Repository reconciliation — 2026-11-27 16:57 Pacific
+
+Verified latest baseline and recent Git history. Backfilled missing 16:03 and 16:57 runs separately and recorded LT-0066–0067 as operational defects. 67 unique entries: 5 previously classified confirmed mismatches, 46 pending investigations, 16 other defects; no independently verified external repairs. Historical cursor remains at 15:03; targeted manual repository repair only. See [16:57 reconciliation](incidents/2026-11-27-manual-1657-reconciliation.md).
